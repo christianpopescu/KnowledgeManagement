@@ -1,0 +1,12 @@
+
+
+####################### Fill one file with random data 
+
+dd if=/dev/random of=output_file.txt count=12 bs=1024
+
+
+####################### Process a text file containing file names, execute a command on this filenames
+
+
+$ while IFS= read -r line; do cp "$line" tmp; done < lst.txt
+
