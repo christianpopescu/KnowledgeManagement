@@ -1,0 +1,47 @@
+= NCurses
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2019-12-02
+:toc:
+
+== NCurses library
+
+The Ncurses (new curses) library is a free software emulation of curses in System V Release 4.0 (SVr4), and more.
+ It uses *terminfo* format, supports pads and color and multiple highlights and forms characters and function-key mapping.
+ 
+ 
+=== Links
+ 
+https://www.gnu.org/software/ncurses/[GNU ncurses] 
+
+The ncurses distribution is available at ncurses 
+https://invisible-island.net/ncurses/[homepage]
+
+
+== Working with Ncurses library
+
+=== MINGW-64
+
+* Set environment variables:
+
+ 	export TERMINFO="/usr/share/terminfo"
+ 
+ * Simple build command line
+ 
+ 	g++ <programname>.cc -lncurses -I/mingw64/include/ncurses
+ 
+ * Simple "Hello world!" program. 
+ 
+ (Source: ncurses-6.1/doc/html/NCURSES-Programming-HOWTO.html#HELLOWORLD)
+ 
+[source, c++]
+	#include <ncurses.h>
+	int main()
+	{
+		initscr(); /* Start curses mode */
+		printw("Hello World !!!"); /* Print Hello World*/
+		refresh(); /* Print it on to the real screen */
+		getch(); /* Wait for user input */
+		endwin(); /* End curses mode */
+		return 0;
+	}
+ 
