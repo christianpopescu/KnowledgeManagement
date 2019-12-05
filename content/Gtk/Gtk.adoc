@@ -1,0 +1,38 @@
+= Gtk
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2019-12-05
+:toc:
+
+== Gtk 
+
+GTK, or the GIMP Toolkit, is a multi-platform toolkit for creating graphical user interfaces.
+
+=== Links
+
+https://www.gtk.org/[Gtk home page]  
+
+== Working with Gtk+
+
+=== MSYS2 / MINGW-64
+
+* Install *GTK3* and its dependencies.
+Open MSYS2 shell and run: 
+
+ 	pacman -S mingw-w64-x86_64-gtk3
+ 
+* (recommended): Install GTK core applications
+** Glade is a GUI designer for GTK. It lets you design your GUI and export it in XML format. You can then import your GUI from your code using the GtkBuilder API. 
+ 	g++ <programname>.cc -lncurses -I/mingw64/include/ncurses
+
+To install *Glade*:
+
+	pacman -S mingw-w64-x86_64-glade 
+
+** Devhelp is a help browser. It lets you easily navigate offline in the GTK, glib and gobject API help relative to the version of these libraries installed on your system.
+
+To install *Devhelp*:
+
+	pacman -S mingw-w64-x86_64-devhelp
+	
+=== Links
+https://www.gtk.org/download/windows.php[install on windows] 
