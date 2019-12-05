@@ -21,14 +21,14 @@ Open MSYS2 shell and run:
  	pacman -S mingw-w64-x86_64-gtk3
  
 * (recommended): Install GTK core applications
-** Glade is a GUI designer for GTK. It lets you design your GUI and export it in XML format. You can then import your GUI from your code using the GtkBuilder API. 
+** *Glade* is a GUI designer for GTK. It lets you design your GUI and export it in XML format. You can then import your GUI from your code using the GtkBuilder API. 
  	g++ <programname>.cc -lncurses -I/mingw64/include/ncurses
 
 To install *Glade*:
 
 	pacman -S mingw-w64-x86_64-glade 
 
-** Devhelp is a help browser. It lets you easily navigate offline in the GTK, glib and gobject API help relative to the version of these libraries installed on your system.
+** *Devhelp* is a help browser. It lets you easily navigate offline in the GTK, glib and gobject API help relative to the version of these libraries installed on your system.
 
 To install *Devhelp*:
 
@@ -36,3 +36,21 @@ To install *Devhelp*:
 	
 === Links
 https://www.gtk.org/download/windows.php[install on windows] 
+
+== GTKMM 
+
+*gtkmm* is the official C++ interface for the popular GUI library *GTK+*. Highlights include typesafe callbacks, and a comprehensive set of widgets that are easily extensible via inheritance.
+
+https://www.gtkmm.org/en/[Home Page GTKMM] 
+
+=== Working in MSYS2 / MINGW-64 environment
+
+https://wiki.gnome.org/Projects/gtkmm/MSWindows
+
+* To install the library
+
+	pacman -S mingw-w64-x86_64-gtkmm3
+
+* To install
+
+	pacman -S pkg-config
