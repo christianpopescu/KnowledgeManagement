@@ -54,3 +54,20 @@ https://wiki.gnome.org/Projects/gtkmm/MSWindows
 * To install
 
 	pacman -S pkg-config
+
+=== Quick example
+
+[source, c++]
+/* TestGtkmm.cc */ 
+#include <gtkmm.h>
+int main(int argc, char** argv)
+{
+        auto app = Gtk::Application::create(argc, argv);
+        Gtk::Window window;
+        window.set_default_size(600,400);
+        return app->run(window);
+}
+
+Compile :
+
+	 g++ -std=c++11 TestGtkmm.cc -o TestGtkmm.exe $(pkg-config gtkmm-3.0 --cflags --libs | sed 's/ -I/ -isystem /g')
