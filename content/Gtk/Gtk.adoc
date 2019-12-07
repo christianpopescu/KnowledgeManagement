@@ -43,7 +43,9 @@ https://www.gtk.org/download/windows.php[install on windows]
 
 [source, c]
 ----
+
 include::src/TestGtk.c[]
+
 ----
 
 
