@@ -84,7 +84,8 @@ Compile :
 
 	 g++ -std=c++11 TestGtkmm.cc -o TestGtkmm.exe $(pkg-config gtkmm-3.0 --cflags --libs | sed 's/ -I/ -isystem /g')
 
-	 ifdef::safe-mode-unsafe[]
+
+ifdef::safe-mode-unsafe[]
 SafeMode: UNSAFE
 endif::safe-mode-unsafe[]
 
