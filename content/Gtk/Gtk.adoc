@@ -83,3 +83,19 @@ include::src/TestGtkmm.cc[]
 Compile :
 
 	 g++ -std=c++11 TestGtkmm.cc -o TestGtkmm.exe $(pkg-config gtkmm-3.0 --cflags --libs | sed 's/ -I/ -isystem /g')
+
+	 ifdef::safe-mode-unsafe[]
+SafeMode: UNSAFE
+endif::safe-mode-unsafe[]
+
+ifdef::safe-mode-safe[]
+SafeMode: SAFE
+endif::safe-mode-safe[]
+
+ifdef::safe-mode-server[]
+SafeMode: SERVER
+endif::safe-mode-server[]
+
+ifdef::safe-mode-secure[]
+SafeMode: SECURE
+endif::safe-mode-secure[]
