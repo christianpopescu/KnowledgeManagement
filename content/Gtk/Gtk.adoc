@@ -75,7 +75,7 @@ https://wiki.gnome.org/Projects/gtkmm/MSWindows
 	pacman -S pkg-config
 
 === Quick example
-
+:safe-mode-unsafe:
 [source, c++]
 ----
 include::src/TestGtkmm.cc[]
