@@ -1,7 +1,7 @@
-== Google Test and Google Mock
+= Google Test and Google Mock
 Doc Writer <christian.popescu@outlook.com>
 v 1.0, 2019-12-14
-
+//:toc:
 
 === Ming64 & MSYS2
 
@@ -54,8 +54,8 @@ namespace cppstdlib {
 
 [source, c++, indent=2]
 ----
-#include "gtest/gtest.h"
-#include "StringBuilder.h"
+#include "gtest/gtest.h"      // include GoogleTest
+#include "StringBuilder.h"    // include class to test
 
 namespace {
   // Test default constructor
@@ -67,8 +67,53 @@ namespace {
     EXPECT_EQ(16, sb.getSize());
   }
 }
-
 ----
++
+4. Build and run the test package (example with makefile)
+
+[source, indent=2]
+----
+GTEST_CFLAGS = `pkg-config --cflags gtest_main`
+GTEST_LIBS = `pkg-config --libs gtest_main`
+	   
+.PHONY: tests all
+	
+tests: all
+	./StringBuilder_UnitTests
+       
+all: StringBuilder_UnitTests
+     
+StringBuilder_UnitTests: StringBuilder_UnitTests.o StringBuilder.o
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) $^ -o $@ $(GTEST_LIBS)
+	 
+StringBuilder_UnitTests.o: StringBuilder_UnitTests.cc 
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $< -c -o $@ $(GTEST_CFLAGS)
+
+StringBuilder.o: StringBuilder.cc 
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $< -c -o $@ 
+----
++
+5. Run example
+
+[source, ident=4]
+----
+$ make -f makefile_test
+g++   StringBuilder_UnitTests.cc -c -o StringBuilder_UnitTests.o `pkg-config --cflags gtest_main`
+g++   StringBuilder_UnitTests.o StringBuilder.o -o StringBuilder_UnitTests `pkg-config --libs gtest_main`
+./StringBuilder_UnitTests
+Running main() from C:/repo/mingw-w64-gtest/src/googletest-release-1.8.1/googletest/src/gtest_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from stringBuilder
+[ RUN      ] stringBuilder.DefaultContructor
+[       OK ] stringBuilder.DefaultContructor (0 ms)
+[----------] 1 test from stringBuilder (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (0 ms total)
+[  PASSED  ] 1 test.
+----
+
 
 === Google Mock
 
