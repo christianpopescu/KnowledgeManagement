@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+# Script from https://github.com/asciidoctor/asciidoctor-extensions-lab/edit/master/scripts/asciidoc-coalescer.rb
+
+
+
 # This script coalesces the AsciiDoc content from a document master into a
 # single output file. It does so by resolving all preprocessor directives in
 # the document, and in any files which are included. The resolving of include
