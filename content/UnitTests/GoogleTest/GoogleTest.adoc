@@ -1,0 +1,15 @@
+== Google Test and Google Mock
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2019-12-14
+
+
+=== Ming64 & MSYS2
+
+==== Installation
+Install package mingw-w64-x86_64-gtest
+
+[code, bash]
+	pacman -S mingw-w64-x86_64-gtest
+
+https://packages.msys2.org/package/mingw-w64-x86_64-gtest[Package mingw-w64-x86_64-gtest] 
+
