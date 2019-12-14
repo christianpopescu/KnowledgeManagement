@@ -13,3 +13,65 @@ Install package mingw-w64-x86_64-gtest
 
 https://packages.msys2.org/package/mingw-w64-x86_64-gtest[Package mingw-w64-x86_64-gtest] 
 
+
+=== Fast set unit tests
+
+==== Use case: one class with a couple of methods to be tested
+
+1. Install Google Test :)
+
+2. Create a simple class to be tested
++
+[source, c++, indent=2]
+----
+#ifndef CPP_LIB_STRINGBUILDER_H
+#define CPP_LIB_STRINGBUILDER_H
+
+#include <string>
+
+namespace cppstdlib {
+  class StringBuilder {
+  public:
+    StringBuilder();
+    virtual ~StringBuilder();
+    std::string getString(); // returns StringBuilder content as string
+    int getLength();  //
+    int getSize();    // get the allocated size
+    void append(std::string str);  // append of string
+
+  private :
+    char* theString;
+    int size;
+    int length;
+    const static int minAlloc;
+  };
+}
+
+#endif // CPP_LIB_STRINGBUILDER_H
+----
++
+3. Create a simple test file that will keep the tests
+
+[source, c++, indent=2]
+----
+#include "gtest/gtest.h"
+#include "StringBuilder.h"
+
+namespace {
+  // Test default constructor
+  TEST(stringBuilder, DefaultContructor) {
+    cppstdlib::StringBuilder sb;
+  
+    EXPECT_EQ(0, sb.getLength());
+
+    EXPECT_EQ(16, sb.getSize());
+  }
+}
+
+----
+
+=== Google Mock
+
+Examples :
+
+https://github.com/google/googletest/tree/master/googlemock/docs[Docs on Git Hub Google Mock]
