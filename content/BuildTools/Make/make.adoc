@@ -1,0 +1,9 @@
+== Gnu Make
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2019-12-17
+:toc:
+
+
+
+*GNU Make* is a tool which controls the generation of executables and other non-source files of a program from the program's source files.
+
