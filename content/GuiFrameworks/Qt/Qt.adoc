@@ -1,0 +1,11 @@
+== Qt
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2019-12-21
+:toc:
+
+*Qt* is a cross-platform application development framework for desktop, embedded and mobile.
+
+With *Qt*, GUIs can be written directly in C++ using its *Widgets* module. Qt also comes with an interactive graphical tool called *Qt Designer* which functions as a code generator for Widgets based GUIs.
+*Qt Designer* can be used stand-alone but is also integrated into Qt Creator.
+
+[blue]_Qt is far more than a GUI toolkit_. It provides modules for cross-platform development in the areas of networking, databases, OpenGL, web technologies, sensors, communications protocols (Bluetooth, serial ports, NFC), XML and JSON processing, printing, PDF generation, and much more.
