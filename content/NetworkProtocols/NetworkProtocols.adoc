@@ -1,13 +1,41 @@
-= Build Tools
+
+= Network Protocols
 Doc Writer <christian.popescu@outlook.com>
 v 1.0, 2019-12-17
 :sectnums:
 :toc:
 :toclevels: 5
 
-include::Make/Make.adoc[]
+
+== SSH
+
+*Secure Shell (SSH)* is a cryptographic network protocol for operating network services securely over an unsecured network.[1] Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH.
+
+
+=== Unix
+
+In Unix, *ssh-agent* is a background program that handles passwords for SSH private keys.
+ 
+The *ssh-add* command prompts the user for a private key password and adds it to the list maintained by ssh-agent. Once you add a password to ssh-agent, you will not be prompted for it when using SSH or scp to connect to hosts with your public key.
+
+
+1. Start *ssh-agent*
+
+	 eval `ssh-agent`
+	 
+Note. Use (`) backcote and not simple cote.
+ +
+2. Add key
+	
+	ssh-add ~/.ssh/my_credentials
+	
+
+//include::Make/Make.adoc[]
 
 // include::ncurses/ncurses.adoc[]
+
+
+
 
 
 
