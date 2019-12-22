@@ -48,3 +48,11 @@ Optional dependencies for ruby
 5. Add control sources tools.
 
 	 pacman -S --needed git subversion
+	 
+6. Add gcc toolchaing
+
+	pacman -S mingw-w64-i686-toolchain mingw-w64-x86_64-toolchain 
+
+7. Add Cmake
+
+	pacman -S mingw-w64-i686-cmake mingw-w64-x86_64-cmake 
