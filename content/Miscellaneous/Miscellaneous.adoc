@@ -35,4 +35,16 @@ Site: https://www.msys2.org/[Home page of msys2 org]
  
 	 pacman -S --needed base-devel perl ruby python2 wget p7zip
  
+ The default location of gem installs is $HOME/.gem/ruby
+Add the following line to your PATH if you plan to install using gem
+$(ruby -rubygems -e "puts Gem.user_dir")/bin
+If you want to install to the system wide location, you must either:
+edit /etc/gemrc or run gem with the --no-user-install flag.
+Optional dependencies for ruby
+    ruby-docs: Ruby documentation
+ 
+ 
+ 
+5. Add control sources tools.
 
+	 pacman -S --needed git subversion
