@@ -9,3 +9,35 @@ With *Qt*, GUIs can be written directly in C++ using its *Widgets* module. Qt al
 *Qt Designer* can be used stand-alone but is also integrated into Qt Creator.
 
 [blue]_Qt is far more than a GUI toolkit_. It provides modules for cross-platform development in the areas of networking, databases, OpenGL, web technologies, sensors, communications protocols (Bluetooth, serial ports, NFC), XML and JSON processing, printing, PDF generation, and much more.
+
+
+=== Create simple application without Qt Creator
+
+1. Create project folder
+
+	Example: 03-SimpleAppWithouQtCreator
+
+2. Add the following main.cpp file
+
+[source, c++, indent=4]
+----
+include::src/Main.cpp[]
+----
+ 
+3.Add Qt project file SimpleApp.pro
+
+[source, indent=4]
+----
+include::src/SimpleApp.pro[]
+----
+
+4.In QT command window (MSVS or MingW) call *qmake* tool. The qmake generates the make files.
+
+image::img/01-qmake_generating_makefiles.png[]
+
+
+5.In QT command windows run the make/nmake command.
+
+6.Run the *.exe file created in release/debug folder
+
+image::img/02-simple-application.png[]
