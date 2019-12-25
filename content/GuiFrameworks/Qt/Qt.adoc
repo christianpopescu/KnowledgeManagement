@@ -41,3 +41,22 @@ image::img/01-qmake_generating_makefiles.png[]
 6.Run the *.exe file created in release/debug folder
 
 image::img/02-simple-application.png[]
+
+=== Deploy Qt application
+
+==== Windows
+
+https://doc.qt.io/qt-5/windows-deployment.html#application-dependencies[Qt application Deployement for Windows] 
+
+1. Execute nmake release. This will create the *release* folder.
+
+2. In the release folder execute *windeployqt* windows deployement tool. 
+
+	Example: windeployqt simpleappwithoutQt.exe
+
+image::img/03-windeploy-execution.png[]
+
+3.This creates the deployement package.
+
+image::img/04-windeploy-execution-result.png[]
+
