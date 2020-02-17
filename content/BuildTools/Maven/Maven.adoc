@@ -1,0 +1,35 @@
+== Apache Maven
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2020-02-17
+:toc:
+
+
+
+Apache Maven is a software project management and comprehension tool. 
+Based on the concept of a project object model (*POM*), Maven can manage a project's build, reporting and documentation from a central piece of information.
+
+=== Useful commands
+
+List all the dependecies of one project.
+
+	mvn dependency:tree
+	
+
+Install sources for the dependencies to be available for debugging.
+
+	mvn dependency:sources
+	
+Modify POM file to download sources by default.
+
+	<build>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-eclipse-plugin</artifactId>
+					<configuration>
+						<downloadSources>true</downloadSources>
+						<downloadJavadocs>true</downloadJavadocs>
+					</configuration>
+				</plugin>
+			</plugins>
+	</build> 
