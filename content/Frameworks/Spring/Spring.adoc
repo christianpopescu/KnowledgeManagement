@@ -5,3 +5,23 @@ v 1.0, 2020-03-29
 :toc:
 :toclevels: 5
 
+== Introduction
+
+*Spring* is a lightweigh framework to build Java applications.
+
+https://spring.io/projects[The Spring Projects Site] 
+
+== Spring Framework
+
+The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications - on any kind of deployment platform.
+
+https://spring.io/projects/spring-framework[Spring Framework Project Site]
+
+Features :
+
+- Core technologies
+- Testing 
+- Data Access
+- Spring MVC and SpringWebFlux web frameworks
+- Integration: remoting, JMS, JCA, JMX, email, tasks, scheduling, cache.
+- Languages: Kotlin, Groovy, dynamic languages
