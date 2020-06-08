@@ -13,6 +13,11 @@ The Ncurses (new curses) library is a free software emulation of curses in Syste
  
 https://www.gnu.org/software/ncurses/[GNU ncurses] 
 
+==== Resources
+https://www.whoishostingthis.com/resources/ncurses/[Learning Ncurses]
+
+http://tldp.org/HOWTO/NCURSES-Programming-HOWTO/index.html[Ncurses Programming - Howto]
+
 The ncurses distribution is available at ncurses 
 https://invisible-island.net/ncurses/[homepage]
 
