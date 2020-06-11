@@ -1,0 +1,29 @@
+= Get Started
+Doc Writer <christian.popescu@outlook.com>
+
+
+== Get Started with Net Core with C# and VSCode
+
+Create solution
+
+	dotnet new sln RootSolution
+
+Create new library
+
+	dotnet new classlib -o Library
+	
+Add library to solution
+
+	dotnet sln add Library\Library.csproj
+
+Create new console application
+
+	dotnet new console -o ConsoleApp
+
+Add console application to solution
+
+	dotnet sln add ConsoleApp\ConsoleApp.csproj
+
+Add reference from console application to library
+
+	dotnet add ConsoleApp\ConsoleApp.csproj reference Library\Library.csproj
