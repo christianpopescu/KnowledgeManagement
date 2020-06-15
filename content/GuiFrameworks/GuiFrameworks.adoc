@@ -8,7 +8,7 @@ v 1.0, 2019-12-21
 == Introduction
 Gui Frameworks known also as widget toolkits are used to construct Graphical User Interface programs.
 
-:imagedir: Qt/img
+:imagesdir: Qt
 include::Qt/Qt.adoc[]
 
 
