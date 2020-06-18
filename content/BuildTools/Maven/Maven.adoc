@@ -14,7 +14,7 @@ https://maven.apache.org/[Apache Maven site]
 
 === Useful commands
 
-List all the dependecies of one project.
+List all the dependencies of one project.
 
 	mvn dependency:tree
 	
