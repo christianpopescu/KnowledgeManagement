@@ -37,3 +37,7 @@ Modify POM file to download sources by default.
 				</plugin>
 			</plugins>
 	</build> 
+
+Create Eclipse files for import (.classpath and .project)
+
+    mvn eclipse:eclipse

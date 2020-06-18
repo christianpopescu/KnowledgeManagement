@@ -5,6 +5,9 @@ v 1.0, 2019-12-17
 :toc:
 :toclevels: 5
 
+[Red]#Build tools#
+
 include::Make/Make.adoc[]
 include::Maven/Maven.adoc[]
-// include::ncurses/ncurses.adoc[]
+
+
