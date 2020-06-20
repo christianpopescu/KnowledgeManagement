@@ -6,7 +6,7 @@ Doc Writer <christian.popescu@outlook.com>
 
 Create solution
 
-	dotnet new sln RootSolution
+	dotnet new sln -- name RootSolution
 
 Create new library
 
@@ -27,3 +27,7 @@ Add console application to solution
 Add reference from console application to library
 
 	dotnet add ConsoleApp\ConsoleApp.csproj reference Library\Library.csproj
+
+Create new xUnit test project
+
+    dotnet new xunit -o Library.Tests
