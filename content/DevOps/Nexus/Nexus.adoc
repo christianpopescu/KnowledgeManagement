@@ -81,3 +81,22 @@ image::/img/Nexus_user_api_key.png[]
 Select button
 
 image::/img/Nexus_user_api_key_boutton.png[]
+
+Dialog is shown
+
+image::/img/Nexus_user_api_key_dialog.png[]
+
+Usage of the API key requires the NuGet API-Key Realm to be activated. To do this, simply add the realm to the active realms in the Realms feature of the Security menu from the Administration menu.
+
+==== Setting the Api Key
+
+Setting the Api Key for a given repository using nuget.exe tool example:
+
+    nuget setapikey a1166690-be7f-31ba-8ce9-85aae086ac01 -source http://localhost:8081/repository/sandbox
+
+==== Deploying the packages using nuget.exe tool
+
+Example:
+
+    nuget push DSALibrary.1.0.1.nupkg -source http://localhost:8081/repository/Sandbox_new/
+
