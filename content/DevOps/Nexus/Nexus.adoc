@@ -66,3 +66,18 @@ https://help.sonatype.com/repomanager3/installation/installation-methods[Install
     URL http://<server_host>:<port> e.g. http://localhost:8081/
 
 * The repository manager installation includes an administrative user with full access. Its username is [Blue]*admin* and the initial password can be found in an *admin.password* file in the *$data-dir* directory. You can sign in with the button on the top right corner of the user interface.
+
+=== Deploying Packages to NuGet Hosted Repositories
+
+In order to authenticate a client against a NuGet repository, NuGet uses an API key for deployment requests. The API key acts as an alias for the user account, so the same API key is used for all NuGet repositories within the repository manager. This user-specific key is generated separately by a user and can be regenerated at any time. At regeneration, all previous keys generated for that user are invalidated.
+
+====  Accessing the Api Key
+
+For usage with the repository manager, NuGet API keys are only needed when packages are going to be deployed.
+Users with the necessary apikey-all security privilege can access the NuGet API Key feature view via the User menu by pressing on their username in the main toolbar.
+
+image::/img/Nexus_user_api_key.png[]
+
+Select button
+
+image::/img/Nexus_user_api_key_boutton.png[]
