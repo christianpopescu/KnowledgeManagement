@@ -25,4 +25,5 @@ The nuget.exe CLI, nuget.exe, is the command-line utility for Windows that provi
 
 User configuration file location and content example
 
-image::/img/NuGet Config File.png[]
+image::img/NuGet Config File.png[]
+

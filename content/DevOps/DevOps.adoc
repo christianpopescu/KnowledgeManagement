@@ -9,8 +9,10 @@ v 1.0, 2020-06-24
 
 
 
+:imagesdir: Nexus
 include::Nexus/Nexus.adoc[]
 
+:imagesdir: PackageManagementSystems
 include::PackageManagementSystems/PackageManagementSystems.adoc[]
 
 

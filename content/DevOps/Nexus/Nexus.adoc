@@ -76,15 +76,15 @@ In order to authenticate a client against a NuGet repository, NuGet uses an API 
 For usage with the repository manager, NuGet API keys are only needed when packages are going to be deployed.
 Users with the necessary apikey-all security privilege can access the NuGet API Key feature view via the User menu by pressing on their username in the main toolbar.
 
-image::/img/Nexus_user_api_key.png[]
+image::img/Nexus_user_api_key.png[]
 
 Select button
 
-image::/img/Nexus_user_api_key_boutton.png[]
+image::img/Nexus_user_api_key_boutton.png[]
 
 Dialog is shown
 
-image::/img/Nexus_user_api_key_dialog.png[]
+image::img/Nexus_user_api_key_dialog.png[]
 
 Usage of the API key requires the NuGet API-Key Realm to be activated. To do this, simply add the realm to the active realms in the Realms feature of the Security menu from the Administration menu.
 
