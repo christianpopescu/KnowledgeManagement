@@ -27,3 +27,9 @@ User configuration file location and content example
 
 image::img/NuGet Config File.png[]
 
+
+=== Package information
+
+* List packages for a given source
+
+    nuget list -Source http://localhost:8081/repository/Sandbox_new
