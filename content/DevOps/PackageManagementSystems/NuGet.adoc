@@ -33,3 +33,7 @@ image::img/NuGet Config File.png[]
 * List packages for a given source
 
     nuget list -Source http://localhost:8081/repository/Sandbox_new
+
+* Install package to a given project (packages folder)
+
+    nuget install <packageID> -OutputDirectory packages
