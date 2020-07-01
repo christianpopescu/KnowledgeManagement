@@ -37,3 +37,5 @@ image::img/NuGet Config File.png[]
 * Install package to a given project (packages folder)
 
     nuget install <packageID> -OutputDirectory packages
+
+* Remove package
