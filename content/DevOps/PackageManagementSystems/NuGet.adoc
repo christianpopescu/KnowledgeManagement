@@ -39,3 +39,46 @@ image::img/NuGet Config File.png[]
     nuget install <packageID> -OutputDirectory packages
 
 * Remove package
+
+To delete one or more packages, delete the packages you want to remove from the *packages* folder.
+
+If you want to reinstall packages, use the _restore_ or _install_ command.
+
+* Viewing folder locations
+
+    # Display locals for all folders: global-packages, http cache, temp and plugins cache
+    nuget locals all -list
+
+Typicaly output:
+
+    http-cache: C:\Users\user1\AppData\Local\NuGet\v3-cache
+    global-packages: C:\Users\user1\.nuget\packages\
+    temp: C:\Users\user1\AppData\Local\Temp\NuGetScratch
+    plugins-cache: C:\Users\user1\AppData\Local\NuGet\plugins-cache
+
+=== What happens when a NuGet package is installed
+
+the different NuGet tools typically create a reference to a package in the project file or packages.config, then perform a package restore, which effectively installs the package. The exception is nuget install, which only expands the package into a packages folder and does not modify any other files.
+
+The general process is as follows:
+
+. (All tools except nuget.exe) Record the package identifier and version into the project file or packages.config.
+
+. Acquire the package
+
+. Save a copy of the package and other information in the _http-cache_ folder.
+
+. If downloaded, install the package into the per-user global-packages folder.
+
+. NuGet installs package dependencies as required.
+
+. Update other project files and folders:
+
+.. For projects using PackageReference, update the package dependency graph stored in obj/project.assets.json. Package contents themselves are not copied into any project folder.
+
+.. Update app.config and/or web.config if the package uses source and config file transformations.
+
+. (Visual Studio only) Display the package's readme file, if available, in a Visual Studio window.
+
+Details on :
+https://docs.microsoft.com/en-us/nuget/concepts/package-installation-process[Package Installation Process]
