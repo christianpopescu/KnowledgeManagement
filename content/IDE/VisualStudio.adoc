@@ -1,0 +1,6 @@
+= Visual Studio
+Doc Writer <christian.popescu@outlook.com>
+
+== Shortcuts
+
+. Insert Snippet - Ctrl+K, Ctrl+X
