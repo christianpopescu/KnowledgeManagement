@@ -1,10 +1,34 @@
-
 = Useful commands
 Doc Writer <christian.popescu@outlook.com>
 
-Some useful commands 
+== Some useful commands
 
-== Awk commands
+* Add user to Sudoer group
+**    Centos
+
+*** Connect as root
+
+    su -
+
+*** Add user to Wheel group
+
+    usermod -aG wheel  <user>
+
+*** Disconnect root session
+
+    su <user>
+
+*** Check that set is ok
+
+    id <user>
+
+Sample answer
+
+uid=1000(christian) gid=1000(christian) groups=1000(christian),10(wheel)
+
+
+
+=== Awk commands
 
 * *Delete leading whitespace* (spaces and tabs) from the beginning of each line.
 
@@ -18,6 +42,6 @@ Some useful commands
 
        awk '{ gsub(/^[ \t]+|[ \t]+$/, ""); print }'
        
-== References
+=== References
 
 http://www.dba-oracle.com/t_awk_commands.htm[Dba Oracle awk commands]
