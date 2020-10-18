@@ -30,22 +30,53 @@ uid=1000(christian) gid=1000(christian) groups=1000(christian),10(wheel)
 
 * Install Gnome GUI using the YUM command.
 
+    yum groupinstall "Server with GUI"
+
+* Issue the following command to enable the GUI as default so that the system will boot into graphical mode.
+
+    systemctl set-default graphical
+
+** Output of the command
+
+    Removed /etc/systemd/system/default.target.
+
+    Created symlink /etc/systemd/system/default.target → /usr/lib/systemd/system/graphical.target.
+
+* Reboot system
+
+    reboot
+
+
 == Install xrdp on CentOS 8 / Red Hat Enterprise Linux 8
 
 *xrdp* is a free and open-source Remote desktop Protocol server which allows you to take remote desktop sessions of Linux server from Windows machine / Linux Machine.
 It is capable of accepting remote connections from rdesktop, freerdp, and remote desktop clients.
 
-=== Setup REPEL repository
+* Setup REPEL repository
 
 On Centos 8
 
     yum install -y epel-release
 
-== Install GUI on Centos 8 / Centos 8.1
+*  Install XRDP
 
+    yum install -y xrdp
 
+* Once xrdp is installed, start the xrdp server service using the systemctl command.
 
+    systemctl start xrdp
 
+* Once installed XRDP should lissen on port *3389*
+
+* By default, xrdp server service won’t start automatically after a system reboot. Execute the below command to enable the service at system startup.
+
+    systemctl enable xrdp
+
+* Configure Firewall.7Configure the firewall to allow RDP connections from external machines. The below command will add the exception for RDP port (3389).
+
+    firewall-cmd --permanent --add-port=3389/tcp
+
+    firewall-cmd --reload
 
 === Awk commands
 
