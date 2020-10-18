@@ -26,6 +26,25 @@ Sample answer
 
 uid=1000(christian) gid=1000(christian) groups=1000(christian),10(wheel)
 
+== Install GUI on Centos 8 / Centos 8.1
+
+* Install Gnome GUI using the YUM command.
+
+== Install xrdp on CentOS 8 / Red Hat Enterprise Linux 8
+
+*xrdp* is a free and open-source Remote desktop Protocol server which allows you to take remote desktop sessions of Linux server from Windows machine / Linux Machine.
+It is capable of accepting remote connections from rdesktop, freerdp, and remote desktop clients.
+
+=== Setup REPEL repository
+
+On Centos 8
+
+    yum install -y epel-release
+
+== Install GUI on Centos 8 / Centos 8.1
+
+
+
 
 
 === Awk commands
