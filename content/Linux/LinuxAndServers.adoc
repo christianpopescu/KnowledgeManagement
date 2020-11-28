@@ -1,0 +1,28 @@
+= Linux And Servers
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2020-10-24
+:sectnums:
+:toc:
+:toclevels: 5
+
+= Introduction
+
+The purpose of this document is to describe how  to install different servers on Linux.
+
+
+= Oracle server
+
+== How to Install Oracle Database 12c on RHEL/CentOS 7
+
+
+Note. The installation is done on RHEL/CentOS Gui server
+
+After installing Oracle 12c, the configuration will be performed through a graphical interface. That is the reason why we need a CentOS 7 server with the X Window System software group installed.
+
+
+
+Sources:
+
+https://www.tecmint.com/install-oracle-database-12c-on-centos-7/[Tecmint]
+
+https://www.howtoforge.com/tutorial/how-to-install-oracle-database-12c-on-centos-7/[HowToForge]

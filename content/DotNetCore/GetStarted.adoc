@@ -1,6 +1,97 @@
 = Get Started
 Doc Writer <christian.popescu@outlook.com>
 
+== Dot Net Core package structue
+
+=== Runtime information
+The runtime is used to run apps created with .NET. When an app author publishes an app, they can include the runtime with their app. If they don't include the runtime, it's up to the user to install the runtime.
+
+There are three different runtimes you can install on Windows:
+
+* ASP.NET Core runtime
+Runs ASP.NET Core apps. Includes the .NET runtime.
+
+* Desktop runtime
+Runs .NET WPF and Windows Forms desktop apps for Windows. Includes the .NET runtime.
+
+* .NET runtime
+This runtime is the simplest runtime and doesn't include any other runtime. It's highly recommended that you install both ASP.NET Core runtime and Desktop runtime for the best compatibility with .NET apps.
+
+=== SDK information
+The SDK is used to build and publish .NET apps and libraries. Installing the SDK includes all three runtimes: ASP.NET Core, Desktop, and .Net.
+
+== Install Dot Net Core
+
+https://docs.microsoft.com/en-us/dotnet/core/install/windows?tabs=net50[Microsoft Installation Page]
+
+If already installed check installed *sdk version*:
+
+    dotnet --list-sdks
+
+Sample result:
+
+    1.0.3 [C:\Program Files\dotnet\sdk]
+    1.1.0 [C:\Program Files\dotnet\sdk]
+    2.1.202 [C:\Program Files\dotnet\sdk]
+    2.1.403 [C:\Program Files\dotnet\sdk]
+    2.1.502 [C:\Program Files\dotnet\sdk]
+    3.0.100 [C:\Program Files\dotnet\sdk]
+    3.1.201 [E:\ccp_vhdd_app\dotnet-sdk-3.1.201\sdk]
+    3.1.301 [C:\Program Files\dotnet\sdk]
+
+Or check the runtime installed version:
+
+dotnet --list-runtimes
+
+Sample result:
+
+    Microsoft.AspNetCore.All 2.1.5 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
+    Microsoft.AspNetCore.All 2.1.6 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
+    Microsoft.AspNetCore.All 2.1.19 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
+    Microsoft.AspNetCore.App 2.1.5 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+    Microsoft.AspNetCore.App 2.1.6 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+    Microsoft.AspNetCore.App 2.1.19 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+    Microsoft.AspNetCore.App 3.0.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+    Microsoft.AspNetCore.App 3.1.3 [E:\ccp_vhdd_app\dotnet-sdk-3.1.201\shared\Microsoft.AspNetCore.App]
+    Microsoft.AspNetCore.App 3.1.5 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.App]
+    Microsoft.NETCore.App 1.0.4 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+    Microsoft.NETCore.App 1.0.5 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+    Microsoft.NETCore.App 1.1.1 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+    Microsoft.NETCore.App 1.1.2 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+    Microsoft.NETCore.App 2.0.9 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+    Microsoft.NETCore.App 2.1.5 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+    Microsoft.NETCore.App 2.1.6 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+    Microsoft.NETCore.App 2.1.19 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+    Microsoft.NETCore.App 3.0.0 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+    Microsoft.NETCore.App 3.1.3 [E:\ccp_vhdd_app\dotnet-sdk-3.1.201\shared\Microsoft.NETCore.App]
+    Microsoft.NETCore.App 3.1.5 [C:\Program Files\dotnet\shared\Microsoft.NETCore.App]
+    Microsoft.WindowsDesktop.App 3.0.0 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+    Microsoft.WindowsDesktop.App 3.1.3 [E:\ccp_vhdd_app\dotnet-sdk-3.1.201\shared\Microsoft.WindowsDesktop.App]
+    Microsoft.WindowsDesktop.App 3.1.5 [C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App]
+
+
+
+
+=== Windows
+
+==== Manually installation
+As an alternative to the Windows installers for .NET, you can download and manually install the SDK or runtime. Manual install is usually performed as part of continuous integration testing. For a developer or user, it's generally better to use an installer.
+
+Both .NET SDK and .NET Runtime can be manually installed after they've been downloaded. If you install .NET SDK, you don't need to install the corresponding runtime.
+
+* First, download a binary release for either the SDK or the runtime.
+
+* Create a directory to extract .NET to. Then, extract the downloaded zip file into that directory.
+
+*   By default, .NET CLI commands and apps won't use .NET installed in this way and you must explicitly choose to use it. To do so, change the environment variables with which an application is started:
+
+    set DOTNET_ROOT=<Installation folder>
+    set PATH=<Installation folder>;%PATH%
+    set DOTNET_MULTILEVEL_LOOKUP=0
+
+This approach lets you install multiple versions into separate locations, then explicitly choose which install location an application should use by running the application with environment variables pointing at that location.
+
+When DOTNET_MULTILEVEL_LOOKUP is set to 0, .NET ignores any globally installed .NET version. Remove that environment setting to let .NET consider the default global install location when selecting the best framework for running the application. The default is typically C:\Program Files\dotnet, which is where the installers install .NET.
 
 == Get Started with Net Core with C# and VSCode
 
