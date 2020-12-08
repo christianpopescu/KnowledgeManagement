@@ -1,6 +1,6 @@
 == Qt
 Doc Writer <christian.popescu@outlook.com>
-v 1.0, 2019-12-21
+v 1.1, 2020-12-08
 :toc:
 
 
@@ -34,12 +34,14 @@ include::src/SimpleApp.pro[]
 
 4.In QT command window (MSVS or MingW) call *qmake* tool. The qmake generates the make files.
 
+Note: In MSVS the vcvars.bat should be run before.
+
 image::img/01-qmake_generating_makefiles.png[]
 
 
 5.In QT command windows run the make/nmake command.
 
-6.Run the *.exe file created in release/debug folder
+6.Run the *.exe file created in release/debug folder (from command line).
 
 image::img/02-simple-application.png[]
 
