@@ -63,3 +63,16 @@ image::img/03-windeploy-execution.png[]
 
 image::img/04-windeploy-execution-result.png[]
 
+=== Troubleshooting
+
+Sometimes the build 64bits doesn't work.
+
+In this case check QMAKE_SPEC variable and set it as win64-msvc
+
+* to query
+
+    qmake -query QMAKE_SPEC
+
+* to set
+
+    qmake -set QMAKE_SPEC win64-msvc
