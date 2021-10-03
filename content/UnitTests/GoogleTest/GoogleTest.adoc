@@ -1,4 +1,4 @@
-= Google Test and Google Mock
+== Google Test and Google Mock
 Doc Writer <christian.popescu@outlook.com>
 v 1.0, 2019-12-14
 //:toc:

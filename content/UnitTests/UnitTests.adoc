@@ -5,7 +5,7 @@ v 1.0, 2019-12-14
 :toc:
 :toclevels: 5
 +
-include::GoogleTest/GoogleTest.adoc[]
+include::GoogleTest/GoogleTest.adoc[Google Tests]
 
 // include::ncurses/ncurses.adoc[]
 
