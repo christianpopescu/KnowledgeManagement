@@ -1,10 +1,12 @@
-== Apache Maven
+= Apache Maven
 Doc Writer <christian.popescu@outlook.com>
-v 1.0, 2020-02-17
+v 1.1, 2021-10-30
+:sectnums:
 :toc:
+:toclevels: 5
 
 
-=== Introduction
+== Introduction
 
 Apache Maven is a software project management and comprehension tool. 
 Based on the concept of a project object model (*POM*), Maven can manage a project's build, reporting and documentation from a central piece of information.
@@ -12,7 +14,7 @@ Based on the concept of a project object model (*POM*), Maven can manage a proje
 
 https://maven.apache.org/[Apache Maven site] 
 
-=== Useful commands
+== Useful commands
 
 List all the dependencies of one project.
 
@@ -41,3 +43,18 @@ Modify POM file to download sources by default.
 Create Eclipse files for import (.classpath and .project)
 
     mvn eclipse:eclipse
+
+== Create projects from maven archetype
+
+=== Maven Quick Start Archetype
+
+https://maven.apache.org/archetypes/maven-archetype-quickstart/[Maven Quick Start Archetype]
+
+Create archetype command
+
+    mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
+
+After that command 4 information are required and, after confirmation, the project is created.
+
+image::img/mvn-create-quickstart-archetype.png[Image of quick start creation]
+
