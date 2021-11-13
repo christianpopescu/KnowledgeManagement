@@ -58,3 +58,46 @@ After that command 4 information are required and, after confirmation, the proje
 
 image::img/mvn-create-quickstart-archetype.png[Image of quick start creation]
 
+== Create executable jars
+
+=== Executable jars that includes dependencies
+
+Use the maven-assembly-pluggin.
+https://maven.apache.org/plugins/maven-assembly-plugin/index.html[Apache Maven-assembly-pluggin]
+
+[source,xml]
+----
+        <plugin>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>3.3.0</version>
+          <executions>
+            <execution>
+              <phase>package</phase>
+              <goals>
+                <goal>single</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <archive>
+              <manifest>
+                <mainClass>
+                  fr.google.java.sandbox.App
+                </mainClass>
+              </manifest>
+            </archive>
+            <descriptorRefs>
+              <descriptorRef>jar-with-dependencies</descriptorRef>
+            </descriptorRefs>
+          </configuration>
+        </plugin>
+
+----
+
+To create package command line example:
+
+    mvn clean package assembly:single
+
+
+=== Ressources
+https://www.baeldung.com/executable-jar-with-maven[Baeldung Executable Jar with Maven]
