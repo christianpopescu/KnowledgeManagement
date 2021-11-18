@@ -9,6 +9,9 @@ v 1.0, 2020-07-13
 *Text-based user interfaces* (*TUI*), alternately *terminal user interfaces*, to reflect a dependence upon the properties of computer terminals and not just text, is a retronym parallel to the concept of graphical user interfaces (GUI).
 
 include::../LinuxUserInterfaceLibraries/ncurses/ncurses.adoc[]
+
+xref:Lanterna[Lanterna Java library]
+
 == References
 
 https://en.wikipedia.org/wiki/Text-based_user_interface[Wikipedia - Text based user interfaces]
