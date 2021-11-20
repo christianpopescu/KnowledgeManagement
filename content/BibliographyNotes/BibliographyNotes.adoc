@@ -13,25 +13,38 @@ The purpose of the document is to keep information about interesting books.
 
 == API design
 
-
-
 [cols="2,3,3,3"]
 |===
 | Image | Title  | Notes | Keywords
 
 a|image::img/API Design Patterns by JJ Geewax (Manning, 2021).png[]
-|Column 2, row 1
-|Column 3, row 1
-|Column 4, row 1
+|Api Design Patterns
+|
+|
 
-|Column 1, row 2
-|Column 2, row 2
-|Column 3, row 2
-|Column 4, row 2
+a|image::img/API Management_ An Architect's Guide to Developing and Managint(Apress, 2017).png[]
+|API Management An Architect’s Guide to Developing and Managing APIs for Your
+Organization
+|
+|
 
-|Column 1, row 3
-|Column 2, row 3
-|Column 3, row 3
-|Column 4, row 3
 |===
 
+== Cloud Native Patterns
+
+[cols="2,3,3,3"]
+|===
+| Image | Title  | Notes | Keywords
+
+a|image::img/Cloud Native Patterns Designing change-tolerant software (Manning, 2019).png[]
+|Api Design Patterns
+|
+|
+
+a|image::img/Design Patterns for Cloud Native Applications (Oreilly, 2021).png[]
+|API Management An Architect’s Guide to Developing and Managing APIs for Your
+Organization
+|
+|
+
+|===
