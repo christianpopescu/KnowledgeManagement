@@ -101,3 +101,15 @@ To create package command line example:
 
 === Ressources
 https://www.baeldung.com/executable-jar-with-maven[Baeldung Executable Jar with Maven]
+
+
+== Clean maven local repository
+
+This command could be useful if error in build because of bad dependencies.
+
+   mvn dependency:purge-local-repository
+
+Example:
+
+image::img/mvn-dependency-purge-local-repository-example
+.png[]
