@@ -72,3 +72,29 @@ On MingW window set the Locale as default and charset as UTF8.
 image::img/Unicode_set_mingw.png[]
 
 image::img/Unicode_set_mingw_charset.png[]
+
+=== Get path environment variable one entry by line
+
+==== Context
+Usually the path variable Windows or Linux is shown as one line.
+
+====  The problem
+This is not very practical if we search something in particular
+
+=== Solution
+
+Open terminal session (Ming Bash on Windows). Use the following command
+
+    echo $PATH | sed 's/:/\n/g'
+
+Sample oputut:
+
+image::/img/PathOneEntryByLine.png[]
+
+
+
+
+
+
+
+

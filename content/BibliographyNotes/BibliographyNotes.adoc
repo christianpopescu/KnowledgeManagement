@@ -48,3 +48,26 @@ Organization
 |
 
 |===
+
+== Architecture and Design
+
+
+=== Application Development
+
+[cols="2,3,3,3"]
+|===
+| Image | Title  | Notes | Keywords
+
+a|image::img/EnterpriseApplicationDevelopmentWithCSharpAndDotNet5.png[]
+|Enterprise Application
+Development with C# 9 and
+.NET 5
+|
+|
+
+a|image::img/ModernWebDevelopment-UnderstandingDomainTechnologies.png[]
+|Modern Web Development: Understanding domains, technologies, and user experience
+|
+| DDD
+
+|===

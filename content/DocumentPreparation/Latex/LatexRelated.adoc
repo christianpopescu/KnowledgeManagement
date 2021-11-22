@@ -1,0 +1,12 @@
+= Latex related
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2021-11-22
+:sectnums:
+:toc:
+:toclevels: 5
+
+== TeXstudio
+
+https://www.texstudio.org/[Official Site]
+
+=== Configuration file
