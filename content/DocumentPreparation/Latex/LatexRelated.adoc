@@ -5,8 +5,23 @@ v 1.0, 2021-11-22
 :toc:
 :toclevels: 5
 
+== MikTeX
+MiKTeX is a modern TeX distribution for Windows, Linux and macOS.
+
+https://miktex.org/[Official site]
+
+Install portable version
+
+image::img/MikTex -Portable Edition.png[]
+
+After running script:
+
+image::img/MikTex in the tasks.png[]
+
 == TeXstudio
 
 https://www.texstudio.org/[Official Site]
+
+image::img/TeXstudio - download versions.png[]
 
 === Configuration file
