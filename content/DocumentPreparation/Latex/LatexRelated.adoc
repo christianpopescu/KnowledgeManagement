@@ -24,4 +24,7 @@ https://www.texstudio.org/[Official Site]
 
 image::img/TeXstudio - download versions.png[]
 
+Notes TeXstudio needs MiKTe to execute correctly. The best solution is to put MikTex executables folder into the path.
+
+
 === Configuration file
