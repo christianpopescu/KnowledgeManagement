@@ -5,7 +5,7 @@ v 1.2, 2021-11-25
 :toclevels: 5
 :sectnums:
 :pdf-page-size: A3
-:pdf-style: 
+:pdf-style:
 
 
 *Qt* is a cross-platform application development framework for desktop, embedded and mobile.
@@ -80,6 +80,15 @@ In this case check QMAKE_SPEC variable and set it as win64-msvc
 * to set
 
     qmake -set QMAKE_SPEC win64-msvc
+
+====  msvc-version.conf loaded but QMAKE_MSC_VER isn't set
+
+The variable seems to be set by qs QMAKE_MSC_VER = _MSC_VER
+
+Where _MSC_VER is set by MS Visual Studio
+
+I've changed to a build MSVS and it works.
+
 
 === Miscelaneous
 
