@@ -1,7 +1,11 @@
-== Qt
+= Qt
 Doc Writer <christian.popescu@outlook.com>
-v 1.1, 2020-12-08
+v 1.2, 2021-11-25
 :toc:
+:toclevels: 5
+:sectnums:
+:pdf-page-size: A3
+:pdf-style: 
 
 
 *Qt* is a cross-platform application development framework for desktop, embedded and mobile.
@@ -76,3 +80,11 @@ In this case check QMAKE_SPEC variable and set it as win64-msvc
 * to set
 
     qmake -set QMAKE_SPEC win64-msvc
+
+=== Miscelaneous
+
+==== Shadow build
+
+Qt has a wonderful option: you can build Qt depending on your need from the same source code in many different flavors. This way you build different versions of Qt on your development machine from the same source code.
+
+https://wiki.qt.io/Qt_shadow_builds[Shadow builds]
