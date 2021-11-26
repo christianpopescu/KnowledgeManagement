@@ -16,7 +16,7 @@ With *Qt*, GUIs can be written directly in C++ using its *Widgets* module. Qt al
 [blue]_Qt is far more than a GUI toolkit_. It provides modules for cross-platform development in the areas of networking, databases, OpenGL, web technologies, sensors, communications protocols (Bluetooth, serial ports, NFC), XML and JSON processing, printing, PDF generation, and much more.
 
 
-=== Create simple application without Qt Creator
+== Create simple application without Qt Creator
 
 1. Create project folder
 
@@ -49,9 +49,9 @@ image::img/01-qmake_generating_makefiles.png[]
 
 image::img/02-simple-application.png[]
 
-=== Deploy Qt application
+== Deploy Qt application
 
-==== Windows
+=== Windows
 
 https://doc.qt.io/qt-5/windows-deployment.html#application-dependencies[Qt application Deployement for Windows] 
 
@@ -67,7 +67,7 @@ image::img/03-windeploy-execution.png[]
 
 image::img/04-windeploy-execution-result.png[]
 
-=== Troubleshooting
+== Troubleshooting
 
 Sometimes the build 64bits doesn't work.
 
@@ -81,7 +81,7 @@ In this case check QMAKE_SPEC variable and set it as win64-msvc
 
     qmake -set QMAKE_SPEC win64-msvc
 
-====  msvc-version.conf loaded but QMAKE_MSC_VER isn't set
+===  msvc-version.conf loaded but QMAKE_MSC_VER isn't set
 
 The variable seems to be set by qs QMAKE_MSC_VER = _MSC_VER
 
@@ -90,10 +90,29 @@ Where _MSC_VER is set by MS Visual Studio
 I've changed to a build MSVS and it works.
 
 
-=== Miscelaneous
+== Miscelaneous
 
-==== Shadow build
+=== Shadow build
 
 Qt has a wonderful option: you can build Qt depending on your need from the same source code in many different flavors. This way you build different versions of Qt on your development machine from the same source code.
 
 https://wiki.qt.io/Qt_shadow_builds[Shadow builds]
+
+== Manipulate different file formats
+
+=== Microsoft Excel file format
+
+. Using Excel itself via Qt's ActiveX framework.
+
+. Using ODBC
+
+. Using independent parser/writer libraries
+
+image::img/Handling Microsoft Excel file format - Qt Wiki.png[]
+
+. Using manual XML processing
+
+https://wiki.qt.io/Handling_Microsoft_Excel_file_format[]
+
+
+
