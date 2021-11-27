@@ -4,6 +4,7 @@ v 1.0, 2021-11-22
 :sectnums:
 :toc:
 :toclevels: 5
+:pdf-page-size: A3
 
 == MikTeX
 MiKTeX is a modern TeX distribution for Windows, Linux and macOS.
@@ -28,3 +29,16 @@ Notes TeXstudio needs MiKTe to execute correctly. The best solution is to put Mi
 
 
 === Configuration file
+
+
+== Building documents
+
+=== Examples of build commands
+
+* Build file
+
+    pdflatex.exe -synctex=1 -interaction=nonstopmode "Notes on Data Structures and Algorithms".tex
+
+* Run [blue]#*bibtex*#
+
+    bibtex "Notes on Data Structures and Algorithms"

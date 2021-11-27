@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/TextEditors/Vim/Vim.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/TextEditors/Vim/Vim.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/DocumentPreparation/Latex/LatexRelated.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/DocumentPreparation/Latex/LatexRelated.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +32,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ccp_vhdd_main\workspace\KnowledgeManagement\books\pdf" />
+      <recent name="E:\ccp_vhdd_main\workspace\KnowledgeManagement\books\html" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,7 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606493109219</updated>
       <workItem from="1606493114118" duration="20000" />
-      <workItem from="1638013971340" duration="1167000" />
+      <workItem from="1638013971340" duration="2447000" />
     </task>
     <servers />
   </component>
