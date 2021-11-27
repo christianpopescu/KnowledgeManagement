@@ -1,7 +1,8 @@
 == Emacs
 Doc Writer <christian.popescu@outlook.com>
-v 1.0, 2019-12-25
+v 1.0, 2021-11-28
 :toc:
+
 
 *Emacs* is an extensible, customizable, free/libre text editor -- and more.
 
@@ -14,3 +15,9 @@ https://www.gnu.org/software/emacs/[Project site]
 * Cut   - C+w
 * Copy  - M+w
 * Paste - C+y
+
+=== Change theme
+
+M-x customize-themes -> to switch to a buffer named \*Custom Themes*
+
+image::img/EmacsThemeChange.png[]
