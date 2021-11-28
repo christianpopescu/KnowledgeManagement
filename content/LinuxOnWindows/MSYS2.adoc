@@ -33,3 +33,24 @@ The MSYS environment contains the unix-like/cygwin based tools, lives under /usr
 For example, in the MINGW64 environment the $PATH variable starts with /mingw64/bin:/usr/bin [BLUE]#*so you get all mingw64 based tools as well as all msys tools*# .
 
 image::img/2021-11-27 22_53_58-Environments - MSYS2.png[]
+
+
+
+*MINGW* - Windows native applications
+
+*MSYS2* - POSIX applications emulated to work in Windows
+
+*MINGW* refers to executables that are compiled using the MINGW GCC Compiler and target the Win32 API. *MSYS2* refers to executables that are compiled by MSYS2 GCC Compiler and make use of a POSIX emulation layer.
+
+== Cookbook
+
+. See installed package of some kind
+
+    pacman -Sl | grep "gcc " | grep "installed"
+
+Result:
+
+    mingw64 mingw-w64-x86_64-gcc 11.2.0-2 [installed]
+    msys gcc 10.2.0-1 [installed]
+
+

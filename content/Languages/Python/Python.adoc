@@ -1,0 +1,41 @@
+= Python
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2021-11-28
+:sectnums:
+:toc:
+:toclevels: 5
+:pdf-page-size: A3
+
+== Introduction
+
+This is a sort of cookbook for Python environment
+
+== Cookbook
+
+=== readline module not found in Windows
+
+On windows on python the readline module does not exist. Even when installed the arrows doesn't work.
+
+*Reason:* This does not work if Windows console is used.
+
+
+*Solution:*
+
+* Use *pyreadline* package, for example for mingw64:
+
+image::img/01-ImportReadlineNotFound.png
+
+    pacman -S mingw-w64-x86_64-python-pyreadline
+
+* use winpty terminal
+
+    $ pacman -S winpty
+
+    resolving dependencies...
+    looking for conflicting packages...
+    Packages (1) winpty-0.4.3-1
+    Total Download Size:   0.49 MiB
+    Total Installed Size:  3.17 MiB
+    ...
+
+
