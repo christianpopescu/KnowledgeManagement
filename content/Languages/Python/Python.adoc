@@ -38,4 +38,18 @@ image::img/01-ImportReadlineNotFound.png
     Total Installed Size:  3.17 MiB
     ...
 
+=== Run python installed on Windows in git bash
 
+If we run python from git bash the console freeze.
+
+*Solution:*
+
+. Run python from winpty
++
+    winpty python
++
+We can add  _"alias python='winpty python.exe'"_ in **.basrc **file
++
+. Run python -i
+
+Python in interactive mode.
