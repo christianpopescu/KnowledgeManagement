@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="" />
+    <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +37,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SDETools/src/NetCore/SDETools" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -54,7 +56,8 @@
       <workItem from="1606493114118" duration="20000" />
       <workItem from="1638013971340" duration="4514000" />
       <workItem from="1638048408092" duration="8219000" />
-      <workItem from="1638223197086" duration="1982000" />
+      <workItem from="1638223197086" duration="2673000" />
+      <workItem from="1638483516796" duration="92000" />
     </task>
     <servers />
   </component>

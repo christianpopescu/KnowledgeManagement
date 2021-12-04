@@ -1,11 +1,14 @@
-== Google Test and Google Mock
+= Google Test and Google Mock
 Doc Writer <christian.popescu@outlook.com>
-v 1.0, 2019-12-14
-//:toc:
+v 1.1, 2021-12-04
+:toc:
+:toclevel: 5
+:sectnums:
 
-=== Ming64 & MSYS2
 
-==== Installation
+== Ming64 & MSYS2
+
+=== Installation
 Install package mingw-w64-x86_64-gtest
 
 [code, bash]
@@ -14,9 +17,9 @@ Install package mingw-w64-x86_64-gtest
 https://packages.msys2.org/package/mingw-w64-x86_64-gtest[Package mingw-w64-x86_64-gtest] 
 
 
-=== Fast set unit tests
+== Fast set unit tests
 
-==== Use case: one class with a couple of methods to be tested
+=== Use case: one class with a couple of methods to be tested
 
 1. Install Google Test :)
 
@@ -115,8 +118,12 @@ Running main() from C:/repo/mingw-w64-gtest/src/googletest-release-1.8.1/googlet
 ----
 
 
-=== Google Mock
+== Google Mock
 
 Examples :
 
 https://github.com/google/googletest/tree/master/googlemock/docs[Docs on Git Hub Google Mock]
+
+== Windows
+
+*Note*: In solution with one project to test and google test project, the project to test should be compiled as static library (.lib).
