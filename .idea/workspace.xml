@@ -37,7 +37,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SDETools/src/NetCore/SDETools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ccp_wrks/LaSdeCppTool/doc" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -58,6 +58,8 @@
       <workItem from="1638048408092" duration="8219000" />
       <workItem from="1638223197086" duration="2673000" />
       <workItem from="1638483516796" duration="92000" />
+      <workItem from="1638658252307" duration="794000" />
+      <workItem from="1638743341359" duration="95000" />
     </task>
     <servers />
   </component>
