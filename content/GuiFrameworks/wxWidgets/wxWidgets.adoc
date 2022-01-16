@@ -1,0 +1,28 @@
+= wxWidgets
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2022-01-16
+:toc:
+:toclevels: 5
+:sectnums:
+:pdf-page-size: A3
+:pdf-style:
+
+== Introduction
+
+As stated on the official site (see references).
+
+*wxWidgets* is a C++ library that lets developers create applications for Windows, macOS, Linux and other platforms with a single code base.
+
+It has popular language bindings for _Python_, _Perl_, *Ruby* and many other languages, and unlike other cross-platform toolkits, wxWidgets gives applications a truly native look and feel because it uses the platform's native API rather than emulating the GUI.
+
+=== References
+
+https://www.wxwidgets.org/[Main Site]
+
+https://docs.wxwidgets.org/trunk/index.html[Documentation]
+
+https://wiki.wxwidgets.org/Main_Page[Wiki]
+
+== Installation and utilisation
+
+=== Windows
