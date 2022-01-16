@@ -1,4 +1,4 @@
-= wxWidgets
+= wxWidgets library
 Doc Writer <christian.popescu@outlook.com>
 v 1.0, 2022-01-16
 :toc:
@@ -33,18 +33,20 @@ I am going to test and document the installation and the build of a solution bas
 
 I'll use the development version 3.1.5.
 
+. Get the binaries, sources and header files.
++
 If you are using one of the supported compiler, like Visual Studio C++ compiler, you can use *the prebuild binaries*.
-
++
 https://docs.wxwidgets.org/trunk/plat_msw_binaries.html
-
++
 The binaries are available at: https://www.wxwidgets.org/downloads#v3.1.5_msw
-
-image::img/Download binaries.png[Binaries to download]
-
++
+image::img/Download binaries.png[]
++
 [cols="1,1"]
 |===
 | wxMSW-3.1.5_vc14x_x64_Dev.7z
-| Development files
+| Development files, libs, debug DLL, *wxwidgets.props* file
 
 | wxWidgets-3.1.5-headers.7z
 | Header files
@@ -58,6 +60,66 @@ image::img/Download binaries.png[Binaries to download]
 | wxWidgets-3.1.5.zip
 | Archived sources
 
-
-
 |===
++
+. Unzip the header files and the lib
+
+* Create the folder for lib and includes :
+
+   D:\ccp_vhdd_app\wxWidgets
+
+* Create environment variable WXWIN that point to the lib + header folder
+
+* Unzip wxMSW-3.1.5_vc14x_x64_Dev.7z + wxWidgets-3.1.5-headers.7z to $WXWIN folder
+
+    The resulted structure is :
++
+image::img/Deployement.png[]
++
+. Using wxWidges with Visual Studio
++
+* Create a new empty C++ solution
++
+image::img/Microsoft Visual Studio - CreateEmptyProject.png[]
++
+* Add the following program to solution. Program get from
+ https://docs.wxwidgets.org/3.0.5/overview_helloworld.html
++
+[source,c++]
+----
+include::src/Program.cpp[indent=4]
+----
++
+* Set the project to use the wxWidgets files. For this include the file *wxwidgets.props* as property sheet for the project.
+
+** Select View/Other windows
++
+image::img/Microsoft Visual Studio - open property manager.png[]
+
+** For each configuration that you will use right click and select
++
+image::img/Microsoft Visual Studio - Add existing property sheet.png[]
++
+** Add $(WXWIN)\include\msvc;$(WXWIN)\include to compiler folder
++
+image::img/Property Pages - Include files.png[]
++
+** Set Windows (/SUBSYSTEM:WINDOWS) for linker
++
+image::img/Property Pages - windows subsystem.png[]
++
+. Build and run project
++
+Here it is the "Hello World" application:
++
+image::img/HelloWorld Application for wxWidget.png[]
+
+Note: To run the application needs the DLLs (release or debug).
+
+* Release
++
+image::img/WidgetsZipAndRelese_wxMSW-3.1.5_vc14x_x64_ReleaseDLL_lib_vc14x.png[]
+
+* Debug
++
+image::img/wxWidgets_x64_Debug.png[]
