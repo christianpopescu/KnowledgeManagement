@@ -1,0 +1,46 @@
+= Lib Curl
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2022-05-14
+:toc:
+:toclevels: 5
+:sectnums:
+:pdf-page-size: A3
+:pdf-style:
+
+== Introduction
+libcurl - the multiprotocol file transfer library
+
+https://curl.se/libcurl/[Official curl / libcurl site]
+
+== CookBook
+=== Using LibCurl with Visual Studio
+
+Interesting article on Stackoveflow :
+
+https://stackoverflow.com/questions/53861300/how-do-you-properly-install-libcurl-for-use-in-visual-studio-2017[Intall properly libcurl for visual studio]
+
+In my case I used
+
+* libcurl_a.lib
+* crypt32.lib
+* Wldap32.lib
+* Normaliz.lib
+
+==== Practical installation
+
+Version downloaded: *curl-7.83.1.zip*
+
+Steps :
+
+. Download version
+. Unzip
+. Open Visual Studio 2022 Developer Command Prompt v17.0.4
+. Go to build folder D:\ccp_vhdd_app\*curl-7.83.1\winbuild*
+. Create static library by running the command
+
+    nmake /f Makefile.vc mode=static
+
+. This will build curl as a static library into
+
+    D:\ccp_vhdd_app\curl-7.83.1\builds\libcurl-vc-x64-release-static-ipv6-sspi-schannel
+

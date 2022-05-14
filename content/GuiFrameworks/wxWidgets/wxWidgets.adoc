@@ -112,7 +112,7 @@ image::img/Microsoft Visual Studio - open property manager.png[]
 +
 image::img/Microsoft Visual Studio - Add existing property sheet.png[]
 +
-** Add $(WXWIN)\include\msvc;$(WXWIN)\include to compiler folder
+** Add *$(WXWIN)\include\msvc;$(WXWIN)\include* to compiler folder
 +
 image::img/Property Pages - Include files.png[]
 +
