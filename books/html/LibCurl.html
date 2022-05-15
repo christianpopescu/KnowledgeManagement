@@ -445,7 +445,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <span id="author" class="author">Doc Writer</span><br>
 <span id="email" class="email"><a href="mailto:christian.popescu@outlook.com">christian.popescu@outlook.com</a></span><br>
 <span id="revnumber">version 1.0,</span>
-<span id="revdate">2022-05-14</span>
+<span id="revdate">2022-05-15</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
@@ -460,6 +460,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
+<li><a href="#_development_with_c">3. Development with C++</a></li>
 </ul>
 </div>
 </div>
@@ -543,8 +544,103 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </li>
+<li>
+<p>Definie environment variable that points to the static build</p>
+<div class="literalblock">
+<div class="content">
+<pre>$env:LIBCURL_PATH = 'D:\ccp_vhdd_app\curl-7.83.1\builds\libcurl-vc-x64-release-static-ipv6-sspi-schannel'</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Set Visual Studio environment</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Add libcurl in Include Directories + Library Directories</p>
+<div class="imageblock">
+<div class="content">
+<img src="../../content/Libraries/C++/LibCurl/img/VisualStudio%20add%20libcurl%20directories.png" alt="Add directories">
+</div>
+</div>
+</li>
+<li>
+<p>Add aditional libraries for the linker</p>
+<div class="literalblock">
+<div class="content">
+<pre>libcurl_a.lib
+crypt32.lib
+Wldap32.lib
+Normaliz.lib
+Ws2_32.lib</pre>
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../content/Libraries/C++/LibCurl/img/VisualStudio%20add%20linker%20additional%20libraries.png" alt="Add additional libraries">
+</div>
+</div>
+</li>
+<li>
+<p>The definition CURL_STATICLIB should be added to the project. See below example of minimal source code in C++</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="c++"><span style="color:#579">#include</span> <span style="color:#B44;font-weight:bold">&lt;iostream&gt;</span>
+<span style="color:#579">#define</span> CURL_STATICLIB
+<span style="color:#579">#include</span> <span style="color:#B44;font-weight:bold">&lt;curl/curl.h&gt;</span>
+
+<span style="color:#0a8;font-weight:bold">int</span> main()
+{
+    CURL* curl;
+    CURLcode res;
+
+    curl = curl_easy_init();
+    <span style="color:#080;font-weight:bold">if</span> (curl) {
+        curl_easy_setopt(curl, CURLOPT_URL, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">https://www.google.com</span><span style="color:#710">&quot;</span></span>);
+        <span style="color:#777">/* Perform the request, res will get the return code */</span>
+        res = curl_easy_perform(curl);
+        <span style="color:#777">/* Check for errors */</span>
+        <span style="color:#080;font-weight:bold">if</span> (res != CURLE_OK)
+            std::cerr &lt;&lt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">curl_easy_perform() failed:</span><span style="color:#710">&quot;</span></span> &lt;&lt; curl_easy_strerror(res) &lt;&lt; std::endl;
+
+
+        <span style="color:#777">/* always cleanup */</span>
+        curl_easy_cleanup(curl);
+    }
+}</code></pre>
+</div>
+</div>
+</li>
 </ol>
 </div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_development_with_c">3. Development with C++</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Libcurl with c
+There's basically only one thing to keep in mind when using C instead of C when interfacing libcurl:</p>
+</div>
+<div class="paragraph">
+<p>The callbacks CANNOT be non-static class member functions</p>
+</div>
+<div class="paragraph">
+<p>Example C++ code:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="c++"><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">AClass</span> {
+<span style="color:#088;font-weight:bold">static</span> size_t write_data(<span style="color:#088;font-weight:bold">void</span> *ptr, size_t size, size_t nmemb, <span style="color:#088;font-weight:bold">void</span> *ourpointer)
+    {
+        <span style="color:#777">/* do what you want with the data */</span>
+    }
+}</code></pre>
 </div>
 </div>
 </div>
@@ -553,7 +649,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2022-05-14 06:54:14 +0200
+Last updated 2022-05-15 21:08:48 +0200
 </div>
 </div>
 </body>

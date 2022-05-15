@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/GuiFrameworks/wxWidgets/wxWidgets.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/GuiFrameworks/wxWidgets/wxWidgets.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Libraries/C++/LibCurl/LibCurl.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/Libraries/C++/LibCurl/LibCurl.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +34,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ccp_wrks\KnowledgeManagement\books\html" />
       <recent name="D:\ccp_wrks\KnowledgeManagement\books\pdf" />
       <recent name="E:\ccp_vhdd_main\workspace\KnowledgeManagement\books\html" />
       <recent name="E:\ccp_vhdd_main\workspace\KnowledgeManagement\books\pdf" />
@@ -64,7 +65,9 @@
       <workItem from="1642354719335" duration="128000" />
       <workItem from="1642354878015" duration="8909000" />
       <workItem from="1642451813553" duration="3993000" />
-      <workItem from="1652501839736" duration="2114000" />
+      <workItem from="1652501839736" duration="3002000" />
+      <workItem from="1652545571049" duration="2789000" />
+      <workItem from="1652640847802" duration="852000" />
     </task>
     <servers />
   </component>
