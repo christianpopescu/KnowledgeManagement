@@ -1,0 +1,56 @@
+= C++ Loggers
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2022-05-29
+:toc:
+:toclevels: 5
+:sectnums:
+:pdf-page-size: A3
+:pdf-style:
+
+== Introduction
+
+This article is about the logger libraries to be used from C++
+
+== spdlog
+
+https://github.com/gabime/spdlog[spdlog GitHub repository]
+
+Very fast, header-only/compiled, C++ logging library.
+
+Building on Windows.
+
+[source,bash]
+----
+git clone https://github.com/gabime/spdlog.git
+
+cd spdlog && mkdir build && cd build
+
+----
+
+Open Visual Studio command line
+[source,bash]
+----
+rem create projects
+
+cmake ..
+
+rem build solution
+rem this will generate the lib file
+
+msbuild spdlog.sln
+
+----
+
+== Log4cxx
+
+https://logging.apache.org/log4cxx/latest_stable/index.html[Log4Cxx Apache site]
+
+Apache *Log4cxx* is a logging framework for C++ patterned after Apache log4j, which uses Apache Portable Runtime for most platform-specific code and should be usable on any platform supported by APR. Apache Log4cxx is licensed under the Apache License, an open source license certified by the Open Source Initiative.
+
+Unfortunatelly it seems that is not actively maintained. From the official change log :
+
+* 0.10.0	2008-04-03	First Apache release
+* 0.11.0	2020-08-09	Maintenance release.   -> Next release twelve ears later
+* 0.13.0	2022-04-15	Maintenance release    -> Last release
+
+

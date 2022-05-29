@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/html/LibCurl.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/html/LibCurl.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books/pdf/LibCurl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/books/pdf/LibCurl.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/Libraries/C++/LibCurl/LibCurl.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/Libraries/C++/LibCurl/LibCurl.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +36,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultPlantUmlFileTemplate": "Empty",
+    "WebServerToolWindowFactoryState": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ccp_wrks\KnowledgeManagement\books\html" />
@@ -66,7 +70,9 @@
       <workItem from="1642451813553" duration="3993000" />
       <workItem from="1652501839736" duration="3002000" />
       <workItem from="1652545571049" duration="2789000" />
-      <workItem from="1652640847802" duration="2201000" />
+      <workItem from="1652640847802" duration="3044000" />
+      <workItem from="1652849950647" duration="1285000" />
+      <workItem from="1653817264073" duration="3779000" />
     </task>
     <servers />
   </component>

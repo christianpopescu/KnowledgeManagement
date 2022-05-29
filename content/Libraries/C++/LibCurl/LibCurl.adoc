@@ -1,6 +1,6 @@
 = Lib Curl
 Doc Writer <christian.popescu@outlook.com>
-v 1.0, 2022-05-15
+v 1.1, 2022-05-18
 :toc:
 :toclevels: 5
 :sectnums:
@@ -54,6 +54,15 @@ Steps :
 +
 image::img/VisualStudio add libcurl directories.png[Add directories]
 +
+or in project file (*.vcxproj file)
++
+[source, xml]
+----
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(LIBCURL_PATH)\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIBCURL_PATH)\lib\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+----
 .. Add aditional libraries for the linker
 
     libcurl_a.lib
@@ -63,6 +72,25 @@ image::img/VisualStudio add libcurl directories.png[Add directories]
     Ws2_32.lib
 +
 image::img/VisualStudio add linker additional libraries.png[Add additional libraries]
++
+or in project file (*.vcxproj file)
++
+[source, xml]
+----
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libcurl_a.lib;crypt32.lib;Wldap32.lib;Normaliz.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+----
 +
 .. The definition CURL_STATICLIB should be added to the project. See below example of minimal source code in C++
 +
