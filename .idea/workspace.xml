@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/html/LibCurl.html" beforeDir="false" afterPath="$PROJECT_DIR$/books/html/LibCurl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/pdf/LibCurl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/books/pdf/LibCurl.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Libraries/C++/LibCurl/LibCurl.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/Libraries/C++/LibCurl/LibCurl.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicrosoftContent/Java.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +34,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "Empty",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;Empty&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ccp_wrks\KnowledgeManagement\books\html" />
@@ -72,7 +70,10 @@
       <workItem from="1652545571049" duration="2789000" />
       <workItem from="1652640847802" duration="3044000" />
       <workItem from="1652849950647" duration="1285000" />
-      <workItem from="1653817264073" duration="3779000" />
+      <workItem from="1653817264073" duration="4444000" />
+      <workItem from="1654411292185" duration="1182000" />
+      <workItem from="1660571749296" duration="2081000" />
+      <workItem from="1663516322565" duration="141000" />
     </task>
     <servers />
   </component>

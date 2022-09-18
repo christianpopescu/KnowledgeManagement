@@ -1,0 +1,8 @@
+= System Design Notes
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2022-09-18
+:toc:
+:toclevels: 5
+:sectnums:
+:pdf-page-size: A3
+:pdf-style:
