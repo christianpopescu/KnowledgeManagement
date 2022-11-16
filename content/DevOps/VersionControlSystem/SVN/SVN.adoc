@@ -1,0 +1,38 @@
+= SVN
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2022-11-15
+:sectnums:
+:toc:
+:toclevels: 5
+
+= Introduction
+
+Document some useful commands on SVN.
+
+
+= Cookbook
+
+== Synchronize repository
+
+To synchronize two repositories use the following command
+
+    svnsync synchronize destination source
+
+If we receive the error message: _svnsync: E000022: Destination repository has not been initialized_ the repository should be intialized with the command.
+
+    svnsync initialize dest source --allow-non-empty
+
+After that we can run the synchronization command.
+
+
+=== Example
+
+    svnsync initialize "file:///e:/ccp_vhdd_svn/ProjectsSoftwareEngineering"  https://helixteamhub.cloud/.../subversion/ProjectsSoftwareEngineering --allow-non-empty
+
+    svnsync sync  https://helixteamhub.cloud/.../subversion/ProjectsSoftwareEngineering
+
+Sample output
+
+    Transmitting file data .
+    Committed revision 312.
+    Copied properties for revision 312.

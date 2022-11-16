@@ -41,7 +41,7 @@ Sample result:
 
 Or check the runtime installed version:
 
-dotnet --list-runtimes
+    dotnet --list-runtimes
 
 Sample result:
 
