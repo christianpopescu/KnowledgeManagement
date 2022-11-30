@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/DotNetCore/GetStarted.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/DotNetCore/GetStarted.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/SystemDesign/SystemDesign.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/SystemDesign/SystemDesign.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,19 +33,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;Empty&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultPlantUmlFileTemplate": "Empty",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/ccp_wrks/KnowledgeManagement",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ccp_wrks\KnowledgeManagement\content\UnitTests\CSharp" />
       <recent name="D:\ccp_wrks\KnowledgeManagement\content\DevOps\VersionControlSystem\SVN" />
       <recent name="D:\ccp_wrks\KnowledgeManagement\books\html" />
       <recent name="D:\ccp_wrks\KnowledgeManagement\books\pdf" />
       <recent name="E:\ccp_vhdd_main\workspace\KnowledgeManagement\books\html" />
-      <recent name="E:\ccp_vhdd_main\workspace\KnowledgeManagement\books\pdf" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -77,7 +79,9 @@
       <workItem from="1660571749296" duration="2081000" />
       <workItem from="1663516322565" duration="1411000" />
       <workItem from="1668364119725" duration="1190000" />
-      <workItem from="1668372184035" duration="5517000" />
+      <workItem from="1668372184035" duration="8471000" />
+      <workItem from="1668715456081" duration="53000" />
+      <workItem from="1669793574723" duration="1965000" />
     </task>
     <servers />
   </component>

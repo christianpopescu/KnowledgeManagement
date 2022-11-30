@@ -1,0 +1,25 @@
+= C# Unit Tests
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2022-11-16
+:sectnums:
+:toc:
+:toclevels: 5
+
+= Introduction
+
+It's about the main unit test framework used for C#
+
+https://learn.microsoft.com/en-us/dotnet/core/testing/[Testing on Microsoft Site]
+
+= Frameworks
+
+== xUnit
+*xUnit* is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 wrote xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, TestDriven.NET, and Xamarin. xUnit.net is a project of the .NET Foundation and operates under its code of conduct.
+
+== NUnit
+
+*NUnit* is a unit-testing framework for all .NET languages. Initially, NUnit was ported from JUnit, and the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It's a project of the .NET Foundation.
+
+== MS Test
+
+MSTest is the Microsoft test framework for all .NET languages. It's extensible and works with both .NET CLI and Visual Studio
