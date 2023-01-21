@@ -1,5 +1,8 @@
 = Get Started
 Doc Writer <christian.popescu@outlook.com>
+:sectnums:
+:toc:
+:toclevels: 5
 
 == Dot Net Core package structue
 
@@ -97,7 +100,7 @@ When DOTNET_MULTILEVEL_LOOKUP is set to 0, .NET ignores any globally installed .
 
 Create solution
 
-	dotnet new sln -- name RootSolution
+	dotnet new sln --name RootSolution
 
 Create new library
 
@@ -122,3 +125,5 @@ Add reference from console application to library
 Create new xUnit test project
 
     dotnet new xunit -o Library.Tests
+
+Create new WPF Project

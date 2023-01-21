@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="" />
+    <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/content/UnitTests/CSharp/img/UnitTestlibrariesForDotNet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/DotNetCore/GetStarted.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/DotNetCore/GetStarted.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/UnitTests/CSharp/CSharpUnitTest.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/UnitTests/CSharp/CSharpUnitTest.adoc" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,16 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "Article",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/ccp_wrks/KnowledgeManagement",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;Article&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ccp_wrks/GitHubMainEntryPoint&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ccp_wrks\KnowledgeManagement\content\UnitTests\CSharp" />
@@ -81,7 +94,14 @@
       <workItem from="1668372184035" duration="8471000" />
       <workItem from="1668715456081" duration="53000" />
       <workItem from="1669793574723" duration="1965000" />
-      <workItem from="1669798344874" duration="475000" />
+      <workItem from="1669798344874" duration="2954000" />
+      <workItem from="1671286160984" duration="43000" />
+      <workItem from="1671287472698" duration="2846000" />
+      <workItem from="1672903352832" duration="706000" />
+      <workItem from="1673474818451" duration="1185000" />
+      <workItem from="1673683256177" duration="64000" />
+      <workItem from="1674114917907" duration="801000" />
+      <workItem from="1674280788075" duration="3781000" />
     </task>
     <servers />
   </component>
