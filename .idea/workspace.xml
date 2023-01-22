@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/UnitTests/CSharp/img/UnitTestlibrariesForDotNet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/DevOps/VersionControlSystem/Git/Git.adoc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/DotNetCore/GetStarted.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/DotNetCore/GetStarted.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/UnitTests/CSharp/CSharpUnitTest.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/UnitTests/CSharp/CSharpUnitTest.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/KnowledManagementRoot.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/KnowledManagementRoot.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +35,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="1ksdCvCb68agG2nVUnCnpJJSPNN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -101,7 +103,7 @@
       <workItem from="1673474818451" duration="1185000" />
       <workItem from="1673683256177" duration="64000" />
       <workItem from="1674114917907" duration="801000" />
-      <workItem from="1674280788075" duration="3781000" />
+      <workItem from="1674280788075" duration="5516000" />
     </task>
     <servers />
   </component>

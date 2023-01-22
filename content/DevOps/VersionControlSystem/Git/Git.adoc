@@ -1,0 +1,33 @@
+= Git
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2023-01-22
+:sectnums:
+:toc:
+:toclevels: 5
+
+== Introduction
+
+== Git cookbook
+
+
+* List untracked files
+
+To list untracked files try:
+
+    git ls-files --others --exclude-standard
+
+* Add untraked files to repository
+
+    git add $(git ls-files -o --exclude-standard)
+
+* Add all untracked and modified files to the repository
+
+    git add -A
+
+Dry run
+    git add -A -n
+
+* List modified files
+
+    git ls-files --modified
+
