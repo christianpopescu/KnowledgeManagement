@@ -5,6 +5,8 @@ v 1.1, 2023-01-21
 :toc:
 :toclevels: 5
 
+link:../../../content/KnowledManagementRoot.adoc [Home]
+
 = Introduction
 
 It's about the main unit test framework used for C#
@@ -40,7 +42,10 @@ The NUnit 3 Test Adapter allows you to run NUnit 3 tests inside Visual Studio or
 === Set Up Test for .net (core) framework
 
 * Create a test library.
+
 * NUnit framework
+
+    install-Package NUnit -Version 3.13.3
 [source]
 ----
 Install from package manager console (visual studio)
@@ -89,9 +94,11 @@ Time Elapsed: 00:00:00.5394086
 
 * NUnit Test SDK
 
+Install-Package Microsoft.NET.Test.Sdk
+
 [source]
 ----
-PM> Install-Package Microsoft.NET.Test.Sdk
+PM>
 Restoring packages for D:\ccp_wrks\Poc\10-PocNetFrameworkHelperLibrary\src\PocHelperLibrary\PocHelperLibraryTest\PocHelperLibraryTest.csproj...
   GET https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json
   OK https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/index.json 135ms
