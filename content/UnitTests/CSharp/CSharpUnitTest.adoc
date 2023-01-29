@@ -5,7 +5,7 @@ v 1.1, 2023-01-21
 :toc:
 :toclevels: 5
 
-link:../../../content/KnowledManagementRoot.adoc [Home]
+link:../../KnowledManagementRoot.adoc[Home]
 
 = Introduction
 
@@ -46,7 +46,8 @@ The NUnit 3 Test Adapter allows you to run NUnit 3 tests inside Visual Studio or
 * NUnit framework
 
     install-Package NUnit -Version 3.13.3
-[source]
+
+[source,indent=8]
 ----
 Install from package manager console (visual studio)
 PM> Install-Package NUnit -Version 3.13.3
@@ -72,9 +73,9 @@ Time Elapsed: 00:00:04.5083532
 
 * NUnit Test Adapter
 
-Install-Package NUnit3TestAdapter -Version 4.3.1
+    Install-Package NUnit3TestAdapter -Version 4.3.1
 
-[source]
+[source,indent=8]
 ----
 PM> Install-Package NUnit3TestAdapter -Version 4.3.1
 Restoring packages for D:\ccp_wrks\Poc\10-PocNetFrameworkHelperLibrary\src\PocHelperLibrary\PocHelperLibraryTest\PocHelperLibraryTest.csproj...
@@ -94,9 +95,9 @@ Time Elapsed: 00:00:00.5394086
 
 * NUnit Test SDK
 
-Install-Package Microsoft.NET.Test.Sdk
+    Install-Package Microsoft.NET.Test.Sdk
 
-[source]
+[source,indent=8]
 ----
 PM>
 Restoring packages for D:\ccp_wrks\Poc\10-PocNetFrameworkHelperLibrary\src\PocHelperLibrary\PocHelperLibraryTest\PocHelperLibraryTest.csproj...
