@@ -1,0 +1,18 @@
+= Using Databases in C#
+Doc Writer <christian.popescu@outlook.com>
+:sectnums:
+:toc:
+:toclevels: 5
+
+
+link:DotNetCore.adoc[Dot Net Core Main Page]
+
+== SqLite
+
+https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/?tabs=visual-studio[SqLite on Microsoft Site]
+
+Nuget installation
+
+    Install-Package Microsoft.Data.Sqlite
+
+
