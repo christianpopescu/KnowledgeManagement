@@ -1,0 +1,16 @@
+= Containers
+Doc Writer <christian.popescu@outlook.com>
+v 1.1, 2023-03-25
+:sectnums:
+:toc:
+:toclevels: 5
+
+include::Docker/Docker.adoc[Docker]
+
+
+
+== Useful links
+
+https://www.docker.com/resources/what-container/[Docker site - What is a container]
+
+https://cloud.google.com/learn/what-are-containers[Google site - What are containers]
