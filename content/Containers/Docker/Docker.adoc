@@ -7,3 +7,20 @@ v 1.1, 2023-03-25
 
 == Introduction
 
+
+
+== Cheatsheet
+
+
+* List images
+
+    docker images
+
+image::img/List_images.png[]
+
+* List all containers
+
+    docker container ls --all
+
+image::img/list_container_all.png[]
+

@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/KnowledManagementRoot.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/KnowledManagementRoot.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/Containers/Docker/Docker.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/Containers/Docker/Docker.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <workItem from="1675465308464" duration="1866000" />
       <workItem from="1677352909720" duration="150000" />
       <workItem from="1679435532757" duration="2158000" />
-      <workItem from="1679733597847" duration="458000" />
+      <workItem from="1679733597847" duration="1610000" />
     </task>
     <servers />
   </component>
