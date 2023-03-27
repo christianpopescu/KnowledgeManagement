@@ -1,6 +1,6 @@
 = wxWidgets library
 Doc Writer <christian.popescu@outlook.com>
-v 1.0, 2022-01-16
+v 1.1, 2023-03-28
 :toc:
 :toclevels: 5
 :sectnums:
@@ -19,6 +19,16 @@ It has popular language bindings for _Python_, _Perl_, _Ruby_ and many other lan
 
 *wxWidgets* provides classes for files and streams, multiple threads, application settings, interprocess communication, online help, database access, and much more.
 
+=== Last tested version
+
+[cols="1,1"]
+|===
+|Latest Stable Release: |*3.2.2.1*
+
+|Released: |*February 13, 2023*
+
+|API Stable Since: |*July 7, 2022*
+|===
 === References
 
 https://www.wxwidgets.org/[Main Site]
@@ -80,7 +90,7 @@ image::img/Download binaries.png[]
 
    D:\ccp_vhdd_app\wxWidgets
 
-* Create environment variable WXWIN that point to the lib + header folder
+* Create environment variable [.blue]#*WXWIN*# that point to the lib + header folder
 
 * Unzip wxMSW-3.1.5_vc14x_x64_Dev.7z + wxWidgets-3.1.5-headers.7z to $WXWIN folder
 
@@ -132,9 +142,18 @@ Note: To run the application needs the DLLs (release or debug).
 +
 image::img/WidgetsZipAndRelese_wxMSW-3.1.5_vc14x_x64_ReleaseDLL_lib_vc14x.png[]
 
+Note: Release Dlls location
+
+    wxMSW-3.2.2_vc14x_x64_ReleaseDLL.7z
+    wxMSW-3.2.2_vc14x_x64_ReleasePDB.7z
+
 * Debug
 +
 image::img/wxWidgets_x64_Debug.png[]
+
+Note: Debug Dll location :
+
+    wxMSW-3.2.2_vc14x_x64_Dev.7z\lib\vc14x_x64_dll\
 
 
 == Programming notes

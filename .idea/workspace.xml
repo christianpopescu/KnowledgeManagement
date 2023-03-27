@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Containers/Docker/Docker.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/Containers/Docker/Docker.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/GuiFrameworks/wxWidgets/wxWidgets.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/GuiFrameworks/wxWidgets/wxWidgets.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,21 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "Empty",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/ccp_wrks/KnowledgeManagement",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;Empty&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ccp_wrks/DevOpsHelperTools/Oracle/Doc&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ccp_wrks\KnowledgeManagement\content\UnitTests\CSharp" />
@@ -109,7 +109,8 @@
       <workItem from="1675465308464" duration="1866000" />
       <workItem from="1677352909720" duration="150000" />
       <workItem from="1679435532757" duration="2158000" />
-      <workItem from="1679733597847" duration="1610000" />
+      <workItem from="1679733597847" duration="2238000" />
+      <workItem from="1679956589387" duration="751000" />
     </task>
     <servers />
   </component>
