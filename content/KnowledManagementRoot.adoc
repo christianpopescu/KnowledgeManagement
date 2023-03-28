@@ -18,3 +18,7 @@ include::DevOps/VersionControlSystem/Git/Git.adoc[]
 == Containers
 
 include::Containers/Containers.adoc[Containers]
+
+== Languages
+
+include::"Languages/C++/C++Language.adoc"[C++ Language]
