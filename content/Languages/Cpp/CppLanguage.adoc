@@ -13,3 +13,18 @@ v 1.0, 2023-03-28
 * STL Library
 
 https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference?view=msvc-170[Microsoft Standard Library Reference]
+
+
+=== Libraries
+
+https://www.boost.org/[Boost C++ Libraries]
+
+https://github.com/facebook/folly[Facebook's Folly]
+
+https://github.com/electronicarts/EASTL[Electronic Arts' EASTL]
+
+https://github.com/bloomberg/bde[Bloomberg's BDE]
+
+https://abseil.io/[Google's Abseil]
+
+https://github.com/fffaraz/awesome-cppwith[The Awesome Cpp list]
