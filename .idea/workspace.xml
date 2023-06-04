@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Languages/Cpp/CppLanguage.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/Languages/Cpp/CppLanguage.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/ccp_wrks/DevOpsHelperTools/Oracle/Doc",
+    "last_opened_file_path": "D:/ccp_wrks/KnowledgeManagement",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,7 +112,8 @@
       <workItem from="1679733597847" duration="2238000" />
       <workItem from="1679956589387" duration="751000" />
       <workItem from="1680038912413" duration="2271000" />
-      <workItem from="1680123855928" duration="521000" />
+      <workItem from="1680123855928" duration="1134000" />
+      <workItem from="1685886657321" duration="869000" />
     </task>
     <servers />
   </component>

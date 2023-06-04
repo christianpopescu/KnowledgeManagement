@@ -1,0 +1,20 @@
+= Java Language
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2023-06-04
+:sectnums:
+:toc:
+:toclevels: 5
+:pdf-page-size: A3
+
+== Introduction
+
+In <<LearnJava>> chapter 1, there is an presentation of Java history and the Java Road Map.
+
+=== Some key points of Java
+
+* Is a statically typed, late binding language
+
+[bibliography]
+== Bibliography
+
+* [[[LearnJava]]] Learning Java - An introduction
