@@ -10,3 +10,8 @@ v 1.0, 2023-06-10
 == Introduction
 
 This is the entry point to document features of C# language + keep track of resources.
+
+
+== Serialization
+
+https://learn.microsoft.com/en-us/dotnet/standard/serialization/[Serialization doc on Microsoft Site]
