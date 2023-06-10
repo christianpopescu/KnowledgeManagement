@@ -1,0 +1,12 @@
+= C# Language Notes
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2023-06-10
+:sectnums:
+:toc:
+:toclevels: 5
+:pdf-page-size: A3
+
+
+== Introduction
+
+This is the entry point to document features of C# language + keep track of resources.

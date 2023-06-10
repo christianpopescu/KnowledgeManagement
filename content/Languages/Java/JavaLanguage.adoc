@@ -14,6 +14,25 @@ In <<LearnJava>> chapter 1, there is an presentation of Java history and the Jav
 
 * Is a statically typed, late binding language
 
+* Java security model has 3 layers
+
+** Verifyier
+
+** Class loader - is responsible for bringing the bytecode for Java classes into the interpreter.
+
+** Security Manager - is a system that could be installed by an application to limit access to the system ressources (files system, network ports, external processes).
+
+
+=== Features
+
+Some key features.
+
+* Lambda expression
+
+* Runnable interface
+
+
+
 [bibliography]
 == Bibliography
 
