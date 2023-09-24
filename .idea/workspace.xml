@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fad36d1b-ba7d-4fe2-b87f-372a165b870b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/content/GuiFrameworks/Qt/img/05-Running nmake.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/GuiFrameworks/Qt/img/06-ConfigMSVC to use QT.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/Languages/C#/C#Language.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/Languages/C#/C#Language.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/GuiFrameworks/GuiFrameworks.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/GuiFrameworks/GuiFrameworks.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/GuiFrameworks/Qt/Qt.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/content/GuiFrameworks/Qt/Qt.adoc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;Empty&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ccp_wrks/KnowledgeManagement&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultPlantUmlFileTemplate": "Empty",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/ccp_wrks/KnowledgeManagement",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ccp_wrks\KnowledgeManagement\content\UnitTests\CSharp" />
@@ -117,6 +120,10 @@
       <workItem from="1685886657321" duration="869000" />
       <workItem from="1685892675926" duration="2081000" />
       <workItem from="1686381590666" duration="1213000" />
+      <workItem from="1687033725693" duration="1462000" />
+      <workItem from="1687161006898" duration="1183000" />
+      <workItem from="1694337138180" duration="147000" />
+      <workItem from="1695571556209" duration="2114000" />
     </task>
     <servers />
   </component>

@@ -38,14 +38,17 @@ include::src/SimpleApp.pro[]
 
 4.In QT command window (MSVS or MingW) call *qmake* tool. The qmake generates the make files.
 
-Note: In MSVS the vcvars.bat should be run before.
+*Note*: In MSVS the vcvars.bat should be run before.
 
 image::img/01-qmake_generating_makefiles.png[]
 
 
+
 5.In QT command windows run the make/nmake command.
 
-6.Run the *.exe file created in release/debug folder (from command line).
+image::img/05-Running nmake.png[]
+
+6.Run the *.exe file created in release/debug folder (*from command line*).
 
 image::img/02-simple-application.png[]
 
@@ -66,6 +69,14 @@ image::img/03-windeploy-execution.png[]
 3.This creates the deployement package.
 
 image::img/04-windeploy-execution-result.png[]
+
+== Integrate QT with Windows
+
+Open the Visual Studio 2022 IDE. Under tools select Extensions and Updates. click the Online arrow on the left and search for Qt. Install the Qt Visual Studio Tools extension.
+
+Configure Visual Studio to use QT.
+
+image::img/06-ConfigMSVC to use QT.png[]
 
 == Troubleshooting
 
