@@ -1,6 +1,6 @@
 # Knowledge Management
 
-The pourpose is to keep in one place information that I've gathered during my professional activity.
+The purpose is to keep in one place some useful information that I've gathered during my professional activity.
 
 Information is kept on this repository or on others Knwoledge Management repositories. 
 
