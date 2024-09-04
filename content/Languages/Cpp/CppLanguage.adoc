@@ -48,6 +48,14 @@ https://abseil.io/[Google's Abseil]
 
 https://github.com/fffaraz/awesome-cppwith[The Awesome Cpp list]
 
+=== Articles
+
+* Scott Meyers - how non member functions improve encapsulation
+
+https://www.drdobbs.com/cpp/how-non-member-functions-improve-encapsu/184401197[Scott Meyers - how non member functions improve encapsulation]
+
+
+
 == Notes
 
 === Variant
@@ -55,6 +63,8 @@ https://github.com/fffaraz/awesome-cppwith[The Awesome Cpp list]
 * std::variant is defined in <variant> header, it can hold a single value of for a given set of types.
 
 * a variant can not store an array
+
+
 
 
 == Bibliography
