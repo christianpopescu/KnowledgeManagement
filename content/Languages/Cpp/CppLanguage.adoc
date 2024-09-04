@@ -8,7 +8,26 @@ v 1.0, 2023-03-28
 
 == Introduction
 
+
 == Interesting links
+
+* ISO Cpp site
+
+https://isocpp.org/[ISO Cpp Site]
+
+* C++ Core Guidelines (by Bjarne Stroustrup and Herb Sutter)
+
+** On ISO Cpp site
+
+https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines[Isocpp - Core Guidelines]
+
+** On GitHub
+
+https://github.com/isocpp/CppCoreGuidelines[Git Hub - Core Guidelines]
+
+* GSL: Guidelines Support Library
+
+https://github.com/microsoft/GSL[GSL: Guidelines Support Library]
 
 * STL Library
 
@@ -28,3 +47,23 @@ https://github.com/bloomberg/bde[Bloomberg's BDE]
 https://abseil.io/[Google's Abseil]
 
 https://github.com/fffaraz/awesome-cppwith[The Awesome Cpp list]
+
+== Notes
+
+=== Variant
+
+* std::variant is defined in <variant> header, it can hold a single value of for a given set of types.
+
+* a variant can not store an array
+
+
+== Bibliography
+
+[bibliography]
+== Bibliography
+
+* [[[SACPP]]] Adrian Ostrowski &
+Piotr Gaczkowski. Software Architecture
+with C++. Packt. 2021
+
+https://www.amazon.com/Software-Architecture-effective-architecture-techniques/dp/1838554599[Book on Amazon]
