@@ -8,72 +8,15 @@ v 1.0, 2023-03-28
 
 == Introduction
 
+Moved to a separate repository :
 
-== Interesting links
-
-* ISO Cpp site
-
-https://isocpp.org/[ISO Cpp Site]
-
-* C++ Core Guidelines (by Bjarne Stroustrup and Herb Sutter)
-
-** On ISO Cpp site
-
-https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines[Isocpp - Core Guidelines]
-
-** On GitHub
-
-https://github.com/isocpp/CppCoreGuidelines[Git Hub - Core Guidelines]
-
-* GSL: Guidelines Support Library
-
-https://github.com/microsoft/GSL[GSL: Guidelines Support Library]
-
-* STL Library
-
-https://learn.microsoft.com/en-us/cpp/standard-library/cpp-standard-library-reference?view=msvc-170[Microsoft Standard Library Reference]
-
-
-=== Libraries
-
-https://www.boost.org/[Boost C++ Libraries]
-
-https://github.com/facebook/folly[Facebook's Folly]
-
-https://github.com/electronicarts/EASTL[Electronic Arts' EASTL]
-
-https://github.com/bloomberg/bde[Bloomberg's BDE]
-
-https://abseil.io/[Google's Abseil]
-
-https://github.com/fffaraz/awesome-cppwith[The Awesome Cpp list]
-
-=== Articles
-
-* Scott Meyers - how non member functions improve encapsulation
-
-https://www.drdobbs.com/cpp/how-non-member-functions-improve-encapsu/184401197[Scott Meyers - how non member functions improve encapsulation]
-
-
-
-== Notes
-
-=== Variant
-
-* std::variant is defined in <variant> header, it can hold a single value of for a given set of types.
-
-* a variant can not store an array
+https://github.com/christianpopescu/KmCpp/tree/main[KM C++]
 
 
 
 
-== Bibliography
 
-[bibliography]
-== Bibliography
 
-* [[[SACPP]]] Adrian Ostrowski &
-Piotr Gaczkowski. Software Architecture
-with C++. Packt. 2021
 
-https://www.amazon.com/Software-Architecture-effective-architecture-techniques/dp/1838554599[Book on Amazon]
+
+
