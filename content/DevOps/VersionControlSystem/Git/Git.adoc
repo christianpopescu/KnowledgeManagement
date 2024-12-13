@@ -1,11 +1,12 @@
 = Git
 Doc Writer <christian.popescu@outlook.com>
-v 1.0, 2023-01-22
+v 1.1, 2024-12-13
 :sectnums:
 :toc:
 :toclevels: 5
 
 == Introduction
+
 
 == Git cookbook
 
@@ -31,3 +32,13 @@ Dry run
 
     git ls-files --modified
 
+
+=== Working with submodules
+
+* Synchronization of submodules
+
+Sometimes after changing the branch the submodules are not syncrhonized.
+
+To resyncrhonize the submodules run :
+
+    git submodule update --init

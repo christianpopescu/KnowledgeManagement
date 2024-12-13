@@ -11,7 +11,9 @@ include::UnitTests/UnitTests.adoc[UnitTest]
 
 == Devops
 
-=== Version Control Systmes
+=== Version Control Systems
+
+link:DevOps/VersionControlSystem/Git/Git.adoc[Git]
 
 include::DevOps/VersionControlSystem/Git/Git.adoc[]
 
