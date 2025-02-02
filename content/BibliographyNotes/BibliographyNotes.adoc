@@ -1,6 +1,6 @@
 = Bibliography notes
 Doc Writer <christian.popescu@outlook.com>
-v 1.0, 2021-11-20
+v 1.1, 2025-02-01
 :sectnums:
 :toc:
 :toclevels: 5
@@ -71,3 +71,47 @@ a|image::img/ModernWebDevelopment-UnderstandingDomainTechnologies.png[]
 | DDD
 
 |===
+
+
+
+=== Software architecture
+
+[cols="1,5"]
+|===
+|Book |Information
+
+a|image::img/Clean_Architecture-Robert_Martin.png[]
+|Very good.Different architecture presented
+
+|Column 1, row 2
+|Column 2, row 2
+
+|Column 1, row 3
+|Column 2, row 3
+
+|Column 1, row 4
+|Column 2, row 4
+|===
+
+==== Clean Architecture
+
+[cols="1,5"]
+|===
+|Book |Information
+
+a|image::img/Clean_Architecture-Robert_Martin.png[]
+|Very good.Different architecture presented
+|===
+
+==== Designing Software Architecture
+
+[cols="1,5"]
+|===
+|Book |Information
+
+a|image::img/Designing_Software_Architecture_small.png[]
+|
+|===
+
+
+
