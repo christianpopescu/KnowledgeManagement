@@ -54,7 +54,7 @@ Organization
 
 === Application Development
 
-[cols="2,3,3,3"]
+[cols="2,3,4,2"]
 |===
 | Image | Title  | Notes | Keywords
 
@@ -76,42 +76,28 @@ a|image::img/ModernWebDevelopment-UnderstandingDomainTechnologies.png[]
 
 === Software architecture
 
-[cols="1,5"]
+[cols="1,2,5"]
 |===
-|Book |Information
+|Book | Title | Information
 
 a|image::img/Clean_Architecture-Robert_Martin.png[]
-|Very good.Different architecture presented
-
-|Column 1, row 2
-|Column 2, row 2
-
-|Column 1, row 3
-|Column 2, row 3
-
-|Column 1, row 4
-|Column 2, row 4
-|===
-
-==== Clean Architecture
-
-[cols="1,5"]
-|===
-|Book |Information
-
-a|image::img/Clean_Architecture-Robert_Martin.png[]
-|Very good.Different architecture presented
-|===
-
-==== Designing Software Architecture
-
-[cols="1,5"]
-|===
-|Book |Information
+|
+| Very good.Different architecture presented
 
 a|image::img/Designing_Software_Architecture_small.png[]
 |
+|
+
+|Column 1, row 3
+|Column 2, row 3
+|
+
+|Column 1, row 4
+|Column 2, row 4
+|
 |===
+
+
 
 
 
