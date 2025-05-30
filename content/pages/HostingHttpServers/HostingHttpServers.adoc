@@ -1,0 +1,71 @@
+= Hosting Http Servers
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2025-05-30
+:sectnums:
+:toc:
+:toclevels: 5
+
+== Introduction
+
+This document is about options available to host HTTP Servers.
+
+In my case it's about hosting locally servers to test or to keep some private sites (wiki, docs, etc.).
+
+
+== Market share of different Web Servers
+
+
+
+https://w3techs.com/technologies/overview/web_server[W3tech - web servers market share]
+
+As of 05/2025
+
+* Nginx – 33.8% of websites
+
+* Apache – 26.2%
+
+* Cloudflare Server – 23.8%
+
+* LiteSpeed – 14.6%
+
+* Node.js – 4.5%
+
+* Microsoft IIS – 3.9%
+
+* Envoy – 1.4%
+
+* Google Servers – 0.8%
+
+* Caddy – 0.3%
+
+Tengine, Cowboy, Kestrel – 0.1% each
+
+
+== Solutions available
+
+=== Python (Built-in HTTP Server)
+
+If you have Python 3, navigate to the site directory and run:
+
+[source, bash]
+----
+cd the-site
+python -m http.server 8080
+----
+
+Now your the site is available at http://localhost:8080.
+
+=== Node.js (http-server)
+
+The following package should be installed :
+
+[source, bash]
+----
+npm install -g http-server
+----
+
+[source, bash]
+----
+cd the-site
+http-server -p 8080
+----
