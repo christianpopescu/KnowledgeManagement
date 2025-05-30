@@ -69,3 +69,51 @@ npm install -g http-server
 cd the-site
 http-server -p 8080
 ----
+
+=== Nginx
+
+You can install Nginx on Windows by following these steps:
+
+1. Download Nginx
+Go to the official Nginx download page.
+
+Download the latest mainline version (recommended for new features) or the stable version.
+
+2. Extract the Files
+
+    Locate the downloaded .zip file.
+
+    Extract it to a directory, e.g., C:\nginx.
+
+3. Start Nginx
+
+    Open Command Prompt as Administrator.
+
+    Navigate to the extracted folder:
+
+    cd C:\nginx
+    start nginx.exe
+4. Verify installation
+
+    Open a browser and go to http://localhost. If installed correctly, you should see the Nginx welcome page.
+
+5. Manage Nginx
+
+    Stop Nginx: nginx -s stop
+
+    Quit Nginx gracefully: nginx -s quit
+
+    Reload configuration: nginx -s reload
+
+    Reopen log files: nginx -s reopen
+
+6. Add new site
+
+The site deployed on D:\KnowledgeManagement\docs is published on http://localhost:8080
+
+    server {
+    listen 8080;
+    server_name KnowledgeManagement.local;
+    root D:\KnowledgeManagement\docs;
+    index index.html;
+    }

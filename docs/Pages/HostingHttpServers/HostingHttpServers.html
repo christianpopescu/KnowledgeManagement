@@ -565,6 +565,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_python_built_in_http_server">3.1. Python (Built-in HTTP Server)</a></li>
 <li><a href="#_node_js_http_server">3.2. Node.js (http-server)</a></li>
+<li><a href="#_nginx">3.3. Nginx</a></li>
 </ul>
 </li>
 </ul>
@@ -662,13 +663,111 @@ http-server -p 8080</code></pre>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_nginx">3.3. Nginx</h3>
+<div class="paragraph">
+<p>You can install Nginx on Windows by following these steps:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Download Nginx
+Go to the official Nginx download page.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Download the latest mainline version (recommended for new features) or the stable version.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Extract the Files</p>
+<div class="literalblock">
+<div class="content">
+<pre>Locate the downloaded .zip file.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Extract it to a directory, e.g., C:\nginx.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Start Nginx</p>
+<div class="literalblock">
+<div class="content">
+<pre>Open Command Prompt as Administrator.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Navigate to the extracted folder:</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    cd C:\nginx
+    start nginx.exe
+4. Verify installation</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Open a browser and go to http://localhost. If installed correctly, you should see the Nginx welcome page.</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Manage Nginx</p>
+<div class="literalblock">
+<div class="content">
+<pre>Stop Nginx: nginx -s stop</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Quit Nginx gracefully: nginx -s quit</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Reload configuration: nginx -s reload</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Reopen log files: nginx -s reopen</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add new site</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The site deployed on D:\KnowledgeManagement\docs is published on <a href="http://localhost:8080" class="bare">http://localhost:8080</a></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>server {
+listen 8080;
+server_name KnowledgeManagement.local;
+root D:\KnowledgeManagement\docs;
+index index.html;
+}</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2025-05-30 14:49:14 +0200
+Last updated 2025-05-30 15:30:51 +0200
 </div>
 </div>
 <script>
