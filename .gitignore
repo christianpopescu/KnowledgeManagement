@@ -1,3 +1,5 @@
 /content/.idea
 *.idea
 target
+/books/pdf/src
+/books/pdf/img
