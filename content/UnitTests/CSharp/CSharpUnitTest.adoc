@@ -7,29 +7,29 @@ v 1.1, 2023-01-21
 
 link:../../KnowledManagementRoot.adoc[Home]
 
-= Introduction
+== Introduction
 
 It's about the main unit test framework used for C#
 
 https://learn.microsoft.com/en-us/dotnet/core/testing/[Testing on Microsoft Site]
 
-= Frameworks
+== Frameworks
 
-== xUnit
+=== xUnit
 *xUnit* is a free, open-source, community-focused unit testing tool for .NET. The original inventor of NUnit v2 wrote xUnit.net. xUnit.net is the latest technology for unit testing .NET apps. It also works with ReSharper, CodeRush, TestDriven.NET, and Xamarin. xUnit.net is a project of the .NET Foundation and operates under its code of conduct.
 
-== NUnit
+=== NUnit
 
 *NUnit* is a unit-testing framework for all .NET languages. Initially, NUnit was ported from JUnit, and the current production release has been rewritten with many new features and support for a wide range of .NET platforms. It's a project of the .NET Foundation.
 
-== MS Test
+=== MS Test
 
 MSTest is the Microsoft test framework for all .NET languages. It's extensible and works with both .NET CLI and Visual Studio
 
 
-= Unit tests - How to
+== Unit tests - How to
 
-== NUnit
+=== NUnit
 
 https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-nunit[Unit Testing with NUnit on Microsoft Site]
 
@@ -39,7 +39,7 @@ https://docs.nunit.org/articles/nunit/intro.html[NUnit Documentation]
 
 The NUnit 3 Test Adapter allows you to run NUnit 3 tests inside Visual Studio or with dotnet on the command line.
 
-=== Set Up Test for .net (core) framework
+==== Set Up Test for .net (core) framework
 
 * Create a test library.
 
