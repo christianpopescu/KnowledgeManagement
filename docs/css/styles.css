@@ -33,4 +33,10 @@ body {
 .content {
     flex-grow: 1;
     padding: 20px;
+    max-width: 100%; /* Ensures full width */
+}
+/* Ensure paragraph inside .content is wider */
+.content p {
+    display: block;
+    max-width: 100%; /* Allows full width */
 }
