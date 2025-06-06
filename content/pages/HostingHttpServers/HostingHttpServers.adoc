@@ -4,6 +4,8 @@ v 1.0, 2025-05-30
 :sectnums:
 :toc:
 :toclevels: 5
+:imagesdir: img
+:imagesoutdir: {docdir}/img
 
 == Introduction
 
@@ -117,3 +119,23 @@ The site deployed on D:\KnowledgeManagement\docs is published on http://localhos
     root D:\KnowledgeManagement\docs;
     index index.html;
     }
+
+
+== Example UML Diagram
+
+
+[plantuml, example-diagram, svg]
+----
+include::PlantUml/sample.puml[]
+----
+
+== Example graphviz
+
+[graphviz, diagram-name, png]
+----
+digraph G {
+  A -> B;
+  B -> C;
+  C -> A;
+}
+----
