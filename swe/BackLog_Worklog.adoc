@@ -1,0 +1,35 @@
+= Backlog Worklog
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2025-06-07
+:sectnums:
+:toc:
+:toclevels: 5
+:imagesdir: {docdir}/img
+:imagesoutdir: {docdir}/img
+
+== Worklog
+
+=== 07/06/2025
+
+* Add Linqpad script to create documents
+
+* Add page PlantUml + Wiki
+
+
+== Backlog
+
+* Cleanup HttpHosting page
+
+* Add linqpad script to copy created document to "deployment" folder.
+
+* Create cmd files that run the linqpad script
+
+** If PDF copy only the pdf file
+
+** If HTML file copy HTML + img folder
+
+* Create application that does:
+
+** the creation + deployment of document.
+
+** The deployment of the static site.

@@ -1,0 +1,12 @@
+@startuml
+folder root {
+    folder "Documents" {
+        file "resume.pdf"
+        file "notes.txt"
+    }
+    folder "Pictures" {
+        file "vacation.jpg"
+        file "profile.png"
+    }
+}
+@enduml

@@ -7,11 +7,11 @@
 void Main(string[] args)
 {
 #if !CMD
-	args = new[] { @"D:\Temp\AsciiDocDocumentToProcess.txt", "html" };
+	args = new[] { @"AsciiDocDocumentToProcess.txt", "html" };
 #endif
 	foreach (var line in File.ReadLines(args[0]))
 	{
-		BuildAsciiDoc(line, args[1]);
+		BuildAsciiDocWithDiagrams(line, args[1]);
 		Console.WriteLine(line + " Processed");
 	}
 

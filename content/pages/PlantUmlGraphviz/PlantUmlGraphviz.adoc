@@ -1,0 +1,70 @@
+= Plant UML + Graphviz
+Doc Writer <christian.popescu@outlook.com>
+v 1.0, 2025-06-07
+:sectnums:
+:toc:
+:toclevels: 5
+:imagesdir: {docdir}/img
+:imagesoutdir: {docdir}/img
+
+== PlantUml
+
+=== Introduction
+
+PlantUMl is an open source tool that allows to create UML diagrams specified by plane text language.
+
+http://plantuml.com/en/index[Plant UML Homepage]
+
+https://crashedmind.github.io/PlantUMLHitchhikersGuide/[PlantUMLHitchhikersGuide]
+
+=== Installation
+
+* Download jar file.
+
+* Copy to choosen folder.
+
+
+* Set GRAPHVIZ_DOT environment variable to point to dot.exe in bin folder of Graphiz
+
+	Example: set GRAPHVIZ_DOT=E:\ccp_vhdd_app\graphviz-2.38\release\bin\dot.exe
+
+* Test installation
+
+	java -jar plantuml.jar -testdot.txt
+	
+where testdot.txt
+
+	@startuml
+	testdot
+	@enduml
+	
+	
+image::ArchitectureTools_TestDot_img1.png[]
+
+	
+* Run
+
+	java -jar plantuml.jar sequenceDiagram.txt
+
+* Example UML Diagram
+
+[plantuml, DiagramFolder, svg]
+----
+include::PlantUml/sample.puml[]
+----
+
+== Graphviz - Graph Visualization Software
+
+=== Introduction
+
+http://www.graphviz.org/[Graphiz Homepage]
+
+=== Installation
+
+Personal preference
+
+* Download Zip file
+
+* Unzip file
+
+* Add bin folder to the path

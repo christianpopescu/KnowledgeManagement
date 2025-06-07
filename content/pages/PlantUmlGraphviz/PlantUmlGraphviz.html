@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.23">
 <meta name="author" content="Doc Writer">
-<title>Hosting Http Servers</title>
+<title>Plant UML + Graphviz</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -437,238 +437,139 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Hosting Http Servers</h1>
+<h1>Plant UML + Graphviz</h1>
 <div class="details">
 <span id="author" class="author">Doc Writer</span><br>
 <span id="email" class="email"><a href="mailto:christian.popescu@outlook.com">christian.popescu@outlook.com</a></span><br>
 <span id="revnumber">version 1.0,</span>
-<span id="revdate">2025-05-30</span>
+<span id="revdate">2025-06-07</span>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_introduction">1. Introduction</a></li>
-<li><a href="#_market_share_of_different_web_servers">2. Market share of different Web Servers</a></li>
-<li><a href="#_solutions_available">3. Solutions available</a>
+<li><a href="#_plantuml">1. PlantUml</a>
 <ul class="sectlevel2">
-<li><a href="#_python_built_in_http_server">3.1. Python (Built-in HTTP Server)</a></li>
-<li><a href="#_node_js_http_server">3.2. Node.js (http-server)</a></li>
-<li><a href="#_nginx">3.3. Nginx</a></li>
+<li><a href="#_introduction">1.1. Introduction</a></li>
+<li><a href="#_installation">1.2. Installation</a></li>
 </ul>
 </li>
-<li><a href="#_example_uml_diagram">4. Example UML Diagram</a></li>
-<li><a href="#_example_graphviz">5. Example graphviz</a></li>
+<li><a href="#_graphviz_graph_visualization_software">2. Graphviz - Graph Visualization Software</a>
+<ul class="sectlevel2">
+<li><a href="#_introduction_2">2.1. Introduction</a></li>
+<li><a href="#_installation_2">2.2. Installation</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_introduction">1. Introduction</h2>
+<h2 id="_plantuml">1. PlantUml</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_introduction">1.1. Introduction</h3>
 <div class="paragraph">
-<p>This document is about options available to host HTTP Servers.</p>
-</div>
-<div class="paragraph">
-<p>In my case it&#8217;s about hosting locally servers to test or to keep some private sites (wiki, docs, etc.).</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_market_share_of_different_web_servers">2. Market share of different Web Servers</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="https://w3techs.com/technologies/overview/web_server">W3tech - web servers market share</a></p>
+<p>PlantUMl is an open source tool that allows to create UML diagrams specified by plane text language.</p>
 </div>
 <div class="paragraph">
-<p>As of 05/2025</p>
+<p><a href="http://plantuml.com/en/index">Plant UML Homepage</a></p>
 </div>
+<div class="paragraph">
+<p><a href="https://crashedmind.github.io/PlantUMLHitchhikersGuide/">PlantUMLHitchhikersGuide</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_installation">1.2. Installation</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Nginx – 33.8% of websites</p>
+<p>Download jar file.</p>
 </li>
 <li>
-<p>Apache – 26.2%</p>
+<p>Copy to choosen folder.</p>
 </li>
 <li>
-<p>Cloudflare Server – 23.8%</p>
+<p>Set GRAPHVIZ_DOT environment variable to point to dot.exe in bin folder of Graphiz</p>
+<div class="literalblock">
+<div class="content">
+<pre>Example: set GRAPHVIZ_DOT=E:\ccp_vhdd_app\graphviz-2.38\release\bin\dot.exe</pre>
+</div>
+</div>
 </li>
 <li>
-<p>LiteSpeed – 14.6%</p>
-</li>
-<li>
-<p>Node.js – 4.5%</p>
-</li>
-<li>
-<p>Microsoft IIS – 3.9%</p>
-</li>
-<li>
-<p>Envoy – 1.4%</p>
-</li>
-<li>
-<p>Google Servers – 0.8%</p>
-</li>
-<li>
-<p>Caddy – 0.3%</p>
+<p>Test installation</p>
+<div class="literalblock">
+<div class="content">
+<pre>java -jar plantuml.jar -testdot.txt</pre>
+</div>
+</div>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Tengine, Cowboy, Kestrel – 0.1% each</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_solutions_available">3. Solutions available</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_python_built_in_http_server">3.1. Python (Built-in HTTP Server)</h3>
-<div class="paragraph">
-<p>If you have Python 3, navigate to the site directory and run:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">cd the-site
-python -m http.server 8080</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Now your the site is available at <a href="http://localhost:8080" class="bare">http://localhost:8080</a>.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_node_js_http_server">3.2. Node.js (http-server)</h3>
-<div class="paragraph">
-<p>The following package should be installed :</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">npm install -g http-server</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">cd the-site
-http-server -p 8080</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_nginx">3.3. Nginx</h3>
-<div class="paragraph">
-<p>You can install Nginx on Windows by following these steps:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Download Nginx
-Go to the official Nginx download page.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Download the latest mainline version (recommended for new features) or the stable version.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Extract the Files</p>
-<div class="literalblock">
-<div class="content">
-<pre>Locate the downloaded .zip file.</pre>
-</div>
+<p>where testdot.txt</p>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>Extract it to a directory, e.g., C:\nginx.</pre>
+<pre>@startuml
+testdot
+@enduml</pre>
 </div>
 </div>
-</li>
-<li>
-<p>Start Nginx</p>
-<div class="literalblock">
-<div class="content">
-<pre>Open Command Prompt as Administrator.</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Navigate to the extracted folder:</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>    cd C:\nginx
-    start nginx.exe
-4. Verify installation</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Open a browser and go to http://localhost. If installed correctly, you should see the Nginx welcome page.</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Manage Nginx</p>
-<div class="literalblock">
-<div class="content">
-<pre>Stop Nginx: nginx -s stop</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Quit Nginx gracefully: nginx -s quit</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Reload configuration: nginx -s reload</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Reopen log files: nginx -s reopen</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Add new site</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>The site deployed on D:\KnowledgeManagement\docs is published on <a href="http://localhost:8080" class="bare">http://localhost:8080</a></p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>server {
-listen 8080;
-server_name KnowledgeManagement.local;
-root D:\KnowledgeManagement\docs;
-index index.html;
-}</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_example_uml_diagram">4. Example UML Diagram</h2>
-<div class="sectionbody">
 <div class="imageblock">
 <div class="content">
-<img src="D:/ccp_wrks/KnowledgeManagement/content/pages/HostingHttpServers/img/example-diagram.svg" alt="example diagram" width="566" height="170">
+<img src="D:/ccp_wrks/KnowledgeManagement/content/pages/PlantUmlGraphviz/img/ArchitectureTools_TestDot_img1.png" alt="ArchitectureTools TestDot img1">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Run</p>
+<div class="literalblock">
+<div class="content">
+<pre>java -jar plantuml.jar sequenceDiagram.txt</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Example UML Diagram</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="D:/ccp_wrks/KnowledgeManagement/content/pages/PlantUmlGraphviz/img/DiagramFolder.svg" alt="DiagramFolder" width="566" height="170">
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_example_graphviz">5. Example graphviz</h2>
+<h2 id="_graphviz_graph_visualization_software">2. Graphviz - Graph Visualization Software</h2>
 <div class="sectionbody">
-<div class="imageblock">
-<div class="content">
-<img src="D:/ccp_wrks/KnowledgeManagement/content/pages/HostingHttpServers/img/diagram-name.png" alt="diagram name" width="119" height="251">
+<div class="sect2">
+<h3 id="_introduction_2">2.1. Introduction</h3>
+<div class="paragraph">
+<p><a href="http://www.graphviz.org/">Graphiz Homepage</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_installation_2">2.2. Installation</h3>
+<div class="paragraph">
+<p>Personal preference</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Download Zip file</p>
+</li>
+<li>
+<p>Unzip file</p>
+</li>
+<li>
+<p>Add bin folder to the path</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -677,7 +578,7 @@ index index.html;
 <div id="footer">
 <div id="footer-text">
 Version 1.0<br>
-Last updated 2025-06-07 23:35:42 +0200
+Last updated 2025-06-07 23:34:45 +0200
 </div>
 </div>
 </body>

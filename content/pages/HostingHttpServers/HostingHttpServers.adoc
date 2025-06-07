@@ -4,7 +4,7 @@ v 1.0, 2025-05-30
 :sectnums:
 :toc:
 :toclevels: 5
-:imagesdir: img
+:imagesdir: {docdir}/img
 :imagesoutdir: {docdir}/img
 
 == Introduction
