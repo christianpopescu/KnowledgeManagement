@@ -1,13 +1,12 @@
 @startuml
-'https://plantuml.com/sequence-diagram
-':plantuml: D:/ccp_vhdd_app/PlantUml/plantuml.jar
-':diagram-format: png
-
-autonumber
-
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+folder root {
+    folder "Documents" {
+        file "resume.pdf"
+        file "notes.txt"
+    }
+    folder "Pictures" {
+        file "vacation.jpg"
+        file "profile.png"
+    }
+}
 @enduml
