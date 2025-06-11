@@ -7,7 +7,7 @@
 void Main(string[] args)
 {
 #if !CMD
-	args = new[] { @"AsciiDocDocumentToProcess.txt", "html" };
+	args = new[] { @"D:\ccp_wrks\KnowledgeManagement\tools\AsciiDocDocumentToProcess.txt", "html" };
 #endif
 	foreach (var line in File.ReadLines(args[0]))
 	{
@@ -31,7 +31,7 @@ public static void BuildAsciiDoc(string filePath, string type)
 	process.Start();
 	string output = process.StandardOutput.ReadToEnd();
 	process.WaitForExit();
-
+	
 }
 
 /// <summary>
