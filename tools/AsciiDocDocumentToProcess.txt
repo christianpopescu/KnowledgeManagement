@@ -2,5 +2,5 @@ D:\ccp_wrks\KnowledgeManagement\content\Containers\Docker\Docker.adoc
 D:\ccp_wrks\KnowledgeManagement\content\LinuxUserInterfaceLibraries\Gtk\Gtk.adoc
 D:\ccp_wrks\KnowledgeManagement\content\TextEditors\Emacs\Emacs.adoc
 D:\ccp_wrks\KnowledgeManagement\content\TextEditors\Vim\Vim.adoc
-D:\ccp_wrks\KnowledgeManagement\content\pages\PlantUmlGraphviz\PlantUmlGraphviz.asciidoc
+D:\ccp_wrks\KnowledgeManagement\content\pages\PlantUmlGraphviz\PlantUmlGraphviz.adoc
 D:\ccp_wrks\KnowledgeManagement\content\pages\HostingHttpServers\HostingHttpServers.adoc
