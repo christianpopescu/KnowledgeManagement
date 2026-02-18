@@ -12,7 +12,8 @@
 void Main(string[] args)
 {
 #if !CMD
-	args = new[] { @"D:\ccp_wrks\KnowledgeManagement\tools\AsciiDocDocumentToProcess.txt", "html", @"D:\ccp_wrks\KnowledgeManagement\books\pdf" };
+	args = new[] { @"D:\ccp_wrks\KnowledgeManagement\tools\AsciiDocDocumentToProcess.txt", "html", @"D:\ccp_wrks\KnowledgeManagement\docs\Pages" };
+	//args = new[] { @"D:\ccp_wrks\KnowledgeManagement\tools\AsciiDocDocumentToProcess.txt", "pdf", @"D:\ccp_wrks\KnowledgeManagement\books\pdf" };
 #endif
 	foreach (var line in File.ReadLines(args[0]))
 	{
@@ -32,25 +33,30 @@ public static void CopyAsciidocGeneratedFiles(string filePath, string type, stri
 {
 	
 	type = type.ToLower();
-	var srcPath = Path.GetDirectoryName(filePath) + Path.GetFileNameWithoutExtension(filePath) + "." + type;
+	var srcPath = Path.GetDirectoryName(filePath) +  @"\" +Path.GetFileNameWithoutExtension(filePath) + "." + type;
 	string dstPath;
 	if (type == "pdf")
-		dstPath = Path.GetDirectoryName(destinationPath) + Path.GetFileNameWithoutExtension(filePath) + "." + type;
+		dstPath = destinationPath + @"\" + Path.GetFileNameWithoutExtension(filePath) + "." + type;
 	else
-		dstPath = Path.GetDirectoryName(destinationPath) + Path.GetFileNameWithoutExtension(filePath) + @"\" + Path.GetFileNameWithoutExtension(filePath) + "." + type;
-	File.Move(srcPath, dstPath);
-	Console.WriteLine(srcPath + " moved succesfully.");
+		dstPath = destinationPath + @"\" + Path.GetFileNameWithoutExtension(filePath) + @"\" + Path.GetFileNameWithoutExtension(filePath) + "." + type;
+	if (!Directory.Exists(Path.GetDirectoryName(dstPath))) Directory.CreateDirectory(Path.GetDirectoryName(dstPath));
+	File.Move(srcPath, dstPath,true);
+	Console.WriteLine("   " + srcPath + " moved succesfully.");
 	// If HTML the Images should be also moved.
-	
+
 	if (type == "html")
 	{
-		var imgPath = srcPath = Path.GetDirectoryName(filePath) + "img";
-		var rootDestinationPath = dstPath = Path.GetDirectoryName(destinationPath) + Path.GetFileNameWithoutExtension(filePath) + @"\" + Path.GetFileNameWithoutExtension(filePath) +  @"\img";
-		foreach (string file in Directory.EnumerateFiles(imgPath))
+		var imgPath = srcPath = Path.GetDirectoryName(filePath) + @"\img";
+		var rootDestinationPath = destinationPath + @"\" + Path.GetFileNameWithoutExtension(filePath) + @"\" + Path.GetFileNameWithoutExtension(filePath) + @"\img";
+		if (Directory.Exists(imgPath))
 		{
-			var fileDestination = rootDestinationPath + Path.GetFileName(file);
-			File.Copy(file, fileDestination);
-			Console.WriteLine(srcPath + " image copyied succesfully.");
+			foreach (string file in Directory.EnumerateFiles(imgPath))
+			{
+				var fileDestination = rootDestinationPath + @"\"+ Path.GetFileName(file);
+				if (!Directory.Exists(Path.GetDirectoryName(fileDestination))) Directory.CreateDirectory(Path.GetDirectoryName(fileDestination));
+				File.Copy(file, fileDestination, true);
+				Console.WriteLine(srcPath + " image copyied succesfully.");
+			}
 		}
 	}
 	
